@@ -26,7 +26,7 @@ label tutorial:
     define mc = Character("[name]", color="#685d4b")
     
     show elias smile
-    elias "Very well then. You are to be <name>. The name suits you."
+    elias "Very well then. You are to be [name]. The name suits you."
 
     show elias neutral
     elias "Time constrains them, [name]. Not us."
@@ -88,9 +88,7 @@ label tutorial:
 
     But do not squander it; your power comes only from your followers, and as a fledgling god, you have them in short supply.
 
-    Spend your energy wisely, and you may attract more yet.
-
-    Go on, then. I wish you all the best.
+    elias "Go on, then. I wish you all the best."
 
     show elias happy
     elias "Goodbye, [name]!"
