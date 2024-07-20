@@ -1,4 +1,22 @@
-﻿# The script of the game goes in this file.
+﻿image elias happy:
+    "images/Elias/elias happy.png"
+    default_zoom
+image elias neutral:
+    "images/Elias/elias neutral.png"
+    default_zoom
+image elias smile:
+    "images/Elias/elias smile.png"
+    default_zoom
+image elias surprise:
+    "images/Elias/elias surprise.png"
+    default_zoom
+
+
+
+
+
+
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
