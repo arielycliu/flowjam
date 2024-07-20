@@ -42,9 +42,44 @@ screen notebook_item_description:
                     action SetVariable("current_item", item)
                     selected False
 
-define my_variable = 0
 
-label notebook_test:    
+label notebook_test:   
+
+    "Show ink"
+
+    show screen bars
+    $ ink = 0
+    while ink < 100:
+        $ ink += 1
+        pause(0.0001)
+    "demo 100"
+
+    while ink != 50:
+        if ink > 50:
+            $ ink -= 1
+        else:
+            $ ink += 1
+        pause(0.0001)
+    "demo 50"
+
+    while ink != 70:
+        if ink > 70:
+            $ ink -= 1
+        else:
+            $ ink += 1
+        pause(0.0001)
+    "demo 70"
+
+    $ goal = 20
+    while ink != goal:
+        if ink > goal:
+            $ ink -= 1
+        else:
+            $ ink += 1
+        pause(0.0001)
+    "demo [goal]"
+
+
     "Hello {font=gui/font/Poliphile.ttf}{size=24}{b}darling ~{/b}{/size}{/font}."
 
     show screen notebook_display_toggle
