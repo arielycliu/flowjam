@@ -163,7 +163,7 @@ label peregrine2_right:
 label peregrine3:
     peregrine "Maybe you do have powers."
 
-    peregrine "You understand my thinking so well."
+    peregrine "You understand me so well."
 
     "She jots some notes down on corner of her parchment."
 
