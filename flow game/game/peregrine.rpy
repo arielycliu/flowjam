@@ -1,4 +1,4 @@
-label peregrine:
+label peregrine1:
     scene bg commonroom
     "A mortal kneels against a wall in a squire's lodgings, quill set to parchment."
 
@@ -91,9 +91,31 @@ label peregrine:
 
     # MENU - TIMES ARE CHANGING FROM NOSTRO
 
+label peregrine1_menu:
+    show peregrine bored
+    peregrine "Honestly, I'm not sure I even should."
+    define wrong_answer_label = "peregrine1_wrong"
+    define right_answer_label = "peregrine1_right"
+    define right_answer = "Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better."
+    show screen notebook_display_toggle
+    show screen notebook_menu
+    "What will you choose?"
+
+label peregrine1_wrong: 
+    $ ink = ink - 5
+    show peregrine confused
+    peregrine "What are you saying?"
+    jump peregrine1_menu
+
+label peregrine1_right: 
+    hide screen notebook_menu
+    $ ink = ink - 5
     show peregrine talking
     peregrine "Exactly! Thank you!"
 
+    jump peregrine2
+
+label peregrine2:
     show peregrine smile
     peregrine "That's just the right way to put it."
 
@@ -115,14 +137,30 @@ label peregrine:
     show peregrine smile
     peregrine "And if I can prove my mother wrong about my becoming a knight, that'd just be a little bonus perk for me."
 
+label peregrine2_menu:
     show peregrine neutral
     peregrine "I just need to convince them that I'm the right man for the job."
+    define wrong_answer_label = "peregrine2_wrong"
+    define right_answer_label = "peregrine2_right"
+    define right_answer = "You already know you've got the best product in town. You just need your buyers to believe that."
+    show screen notebook_display_toggle
+    show screen notebook_menu
+    "What will you choose?"
 
-    # MENU FROM SYNTHEA
+label peregrine2_wrong: 
+    $ ink = ink - 5
+    show peregrine confused
+    peregrine "What are you saying?"
+    jump peregrine2_menu
 
+label peregrine2_right: 
+    hide screen notebook_menu
+    $ ink = ink - 5
     show peregrine smile
     peregrine "Exactly again!"
+    jump peregrine3
 
+label peregrine3:
     peregrine "Maybe you do have powers."
 
     peregrine "You understand my thinking so well."
@@ -184,13 +222,30 @@ label peregrine:
 
     peregrine "And if I keep having to lie, I don't know what I'll do either."
 
+
+label peregrine3_menu:
     peregrine "Without the knighthood... what will I have?"
+    define wrong_answer_label = "peregrine3_wrong"
+    define right_answer_label = "peregrine3_right"
+    define right_answer = "And I've worked really, really hard to be in this position."
+    show screen notebook_display_toggle
+    show screen notebook_menu
+    "What will you choose?"
 
-    # And I've worked really, really hard to be in this position.
+label peregrine3_wrong: 
+    $ ink = ink - 5
+    show peregrine confused
+    peregrine "What are you saying?"
+    jump peregrine3_menu
 
+label peregrine3_right: 
+    hide screen notebook_menu
+    $ ink = ink - 5
     show peregrine smile
     peregrine "Okay, okay, no need to throw my own words back at me!"
+    jump peregrine3andahalf
 
+label peregrine3andahalf:
     peregrine "Although I appreciate the encouragement."
 
     mc "You've had the determination to make it this far, against your mother's wishes and against all odds."
@@ -217,6 +272,7 @@ label peregrine:
 
     peregrine "But thank you, seriously!"
 
+label peregrine4:
     while True:
         "Peregrine puts her hair into her mouth, realizes what she's doing, and takes it back out."
 

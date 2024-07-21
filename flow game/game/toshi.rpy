@@ -278,7 +278,7 @@ label toshi3_right:
     $ ink = ink - 5
     show toshi sad
     toshi "That's..."
-    jump toshtoshi3andahalfi4
+    jump toshi3andahalf
 
 label toshi3andahalf:
     toshi "I don't know."
