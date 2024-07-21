@@ -120,12 +120,6 @@ label start:
 
     jump tutorial
 
-    menu:
-        "Option 1":
-            "You chose option 1."
-        "Option 2":
-            "You chose option 2."
-
 label game_end:
     "Tada! You have won the game"
     return
