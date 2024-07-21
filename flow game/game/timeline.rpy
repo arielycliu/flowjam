@@ -30,7 +30,7 @@ screen TimelineUI:
     default part2 = 4
     default part3 = 4
     default part4 = 4
-    default complete = True
+    default complete = True if part1 == part2 == part3 == part4 == 4 else False
 
     default xpos1 = part1_xpos[part1 - 1]
     default xpos2 = part2_xpos[part2 - 1]
