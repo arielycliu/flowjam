@@ -1,0 +1,17 @@
+
+*.rpyb
+*.rpyb
+*.rpyb
+*.save
+*.save
+/flow game/game/saves
+flow game/errors.txt
+flow game/.vscode/settings.json
+*.rpyb
+flow game/*.rpyb
+flow game/game/*.rpyb
+/flow game/game/cache
+/flow game/game/cache/*.rpyb
+/flow game/game/cache
+*.rpyb
+*.rpyb
