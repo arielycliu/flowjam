@@ -26,7 +26,7 @@ label tutorial:
     define mc = Character("[name]", color="#685d4b")
     
     show elias smile
-    elias "Very well then. You are to be <name>. The name suits you."
+    elias "Very well then. You are to be [name]. The name suits you."
 
     show elias neutral
     elias "Time constrains them, [name]. Not us."
