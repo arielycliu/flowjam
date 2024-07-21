@@ -1,0 +1,25 @@
+# Ensure all text files use CRLF line endings on commit
+* text eol=crlf
+
+# Explicitly declare text files you want to always convert to CRLF on commit.
+*.rpy text eol=crlf
+*.cpp text eol=crlf
+*.h text eol=crlf
+*.hpp text eol=crlf
+*.py text eol=crlf
+*.js text eol=crlf
+*.jsx text eol=crlf
+*.ts text eol=crlf
+*.tsx text eol=crlf
+*.html text eol=crlf
+*.css text eol=crlf
+*.md text eol=crlf
+*.txt text eol=crlf
+*.json text eol=crlf
+
+# Declare files that are binary and should not be modified.
+*.jpg binary
+*.png binary
+*.gif binary
+*.exe binary
+*.dll binary
