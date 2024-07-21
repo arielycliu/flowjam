@@ -4,6 +4,7 @@ label nostro1:
     show screen timelineButton
     show screen notebook_display_toggle
     show screen inkbar
+    scene bg castle
 
     "A cold stone room, lit by wall-mounted candles. Flickering coals sit in the untended fireplace."
 
@@ -225,7 +226,7 @@ label nostro3andahalf:
 label nostro4:
     # so that from now on, every time you jump back to Nostro, he's writing
     while True:
-        "Nostro is writing with fervour - his quill scratches so quickly it threatens to shred the paper."
+        "Nostro is writing with fervour - his pen scratches so quickly it threatens to shred the paper."
 
         "Nostro is tapping his fingers, deep in thought. An ink smudge stains his fingertips."
 
