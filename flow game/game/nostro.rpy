@@ -118,7 +118,21 @@ label nostro2:
 
     "It's surprisingly sweet."
 
-    # YOU WRITE SOMETHING HERE THAT BUILDS INTO SYNTHEA
+    nostro "It is delicious, is it not?"
+
+    "Then, a tingling spreads across my tongue. My face puckers."
+
+    nostro "But it holds an unexpected acidity."
+
+    mc "Yes-"
+    
+    " - I begin to cough - "
+    
+    "- it's quite something."
+
+    nostro "Inksmith, you must forgive me for not warning you."
+
+    nostro "Sometimes, I find the unexpected to be the most pleasing."
 
     nostro "[name], since you are here already - may I ask you another favour?"
 
