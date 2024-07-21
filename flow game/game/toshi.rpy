@@ -1,6 +1,6 @@
 label toshi:
     scene bg gazebo
-    "On a balcony overlooking a grand maple garden, a young man sits, surrounded by "
+    "On a balcony overlooking a grand maple garden, a mortal sits, surrounded by balls of paper."
 
     show toshi sad masked
     toshi_unknown "This is hopeless..."
@@ -9,6 +9,7 @@ label toshi:
 
     toshi_unknown "..."
 
+    show toshi frown masked
     toshi_unknown "I'm hopeless..."
 
     "Suddenly, he straightens."
@@ -52,6 +53,23 @@ label toshi:
 
     toshi "Thank you for coming."
 
-    toshi ""
+    show toshi sad
+    toshi "I..."
+
+    show toshi grin
+    toshi "I admit, I've been struggling."
+
+    show toshi smile
+    toshi "I'm trying to put a poem together."
+
+    toshi "There's this girl..."
+
+    mc "Ah. A classic motivator for writing, if there ever was one."
+
+    show toshi grin
+    toshi "You understand, then."
+
+    show toshi grin
+
 
 
