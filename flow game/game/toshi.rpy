@@ -184,7 +184,7 @@ label toshi2:
     toshi "Perhaps."
 
     show toshi sad
-    $ notebook_items.append()
+    $ notebook_items.append("But honesty never ends well in the long run. I know that from experience.")
     toshi "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}But honesty never ends well in the long run. I know that from experience.{/b}{/size}{/font}"
 
     show toshi sadmasked
