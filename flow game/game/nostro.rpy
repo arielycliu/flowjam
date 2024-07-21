@@ -90,7 +90,7 @@ label nostro:
 
     "It's surprisingly sweet."
 
-    # YOU WRITE SOMETHING HERE THAT BUILDS INTO FUTURE GIRL
+    # YOU WRITE SOMETHING HERE THAT BUILDS INTO SYNTHEA
 
     nostro "[name], since you are here already - may I ask you another favour?"
 
@@ -160,6 +160,8 @@ label nostro:
     nostro "I will let you go for now, then. I am certain that you have wealths of followers who do still require that same instruction."
 
     nostro "Do not take that to mean that I have dismissed you from my presence, of course. Please, feel free to sit here as long as you wish. My home is yours, Inksmith."
+
+    hide nostro
 
     # so that from now on, every time you jump back to Nostro, he's writing
     while True:

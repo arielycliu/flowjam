@@ -73,3 +73,12 @@ label toshi:
 
 
 
+
+
+
+    toshi "I find {ink}lying always makes things better. Or if not better, more interesting.{/ink}"
+
+    toshi "Or if not more interesting..."
+
+    toshi "Easier."
+
