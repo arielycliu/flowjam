@@ -195,7 +195,7 @@ label toshi:
     toshi "Really, keeping some distance is better for everyone."
 
     show toshi grin
-    toshi "That's why I find {ink}lying can always make things better. Or if not better, more interesting.{/ink}"
+    toshi "That's why I find {ink}lying can always solve problems. Or make things better. Or if not better, more interesting.{/ink}"
 
     toshi "Or if not more interesting..."
 
