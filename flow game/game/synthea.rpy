@@ -1,0 +1,109 @@
+label synthea:
+    scene bg office
+
+    "A mortal is tapping away at a shimmering image of a keyboard in a technology-filled office."
+
+    "Ah, the holographic age - the site of the death of the handwritten word."
+
+    "The buzz of writing activity energizes me, though, and I glance at the mortal's screen."
+
+    "Bright symbols I just barely recognize flash across it at breakneck speed. It appears to be some sort of adapted version of shorthand."
+
+    "The mortal takes a sip from her flask, then spots me."
+
+    show synthea shocked
+    synthea "!"
+
+    "She makes a zipping motion across her mouth, then turns off her screen and walks slowly over to the break room."
+
+    "Wordlessly, I follow."
+
+    scene bg breakroom
+    "Once inside, she closes the door and gives me a big smile."
+
+    show synthea happy
+    synthea "Hello, [name]!"
+
+    synthea "It looks like my interest in ancient mythology paid off."
+
+    synthea "Don't worry, I won't tell anyone we met."
+
+    "Bafflingly, she grabs my hand and shakes it with enthusiasm."
+
+    show synthea grin
+    synthea "It's nice to meet you!"
+
+    mc "You're... very earnest."
+
+    show synthea happy
+    synthea "Yes!"
+
+    synthea "It pays to be genuine in sales nowadays."
+
+    synthea "{ink}People can feel when you're being genuine, even if they think they can't tell.{/ink}"
+
+    synthea "And I write ad copy for a living."
+
+    synthea "With so much going on in the world - automated false human identity replacements, eyescanner scams - people just want to believe they can trust you."
+
+    synthea "What I'm not as good at is hooking people in."
+
+    synthea "Getting their attention - now, that's a tougher sell."
+
+    synthea "That's exactly why I need your advice."
+
+    synthea "I'm working on marketing a lot of things right now."
+
+    synthea "Why, if I listed them all, we'd be here all day!"
+
+    synthea "So I'm not sure I'm looking for any specific advice here."
+
+    show synthea grin
+    synthea "Any thoughts?"
+
+    # MENU - Sometimes, I find the unexpected to be the most pleasing.
+
+    synthea "Hmm. There's a thought, huh?"
+
+    synthea "You may just be right."
+
+    synthea "That'll work really great for the strobe light tanning bed!"
+
+    show synthea happy
+    synthea "I think I just lack inspiration, lately."
+
+    synthea "I believe in our clients' projects. I really do. And I want them to succeed."
+
+    synthea "{ink}You already know you've got the best product in town. You just need your buyers to believe that.{/ink} But that's precisely the problem."
+
+    synthea "Sometimes, customers just don't care about quality."
+    
+    synthea "All they want is something they feel good about purchasing!"
+    
+    synthea "Appealing to emotions, right?"
+
+    show synthea shocked
+    synthea "But there's just so many things people don't care about anymore."
+
+    synthea "Climate change, animal protection, addiction, - they're worn out on caring."
+
+    synthea "I suppose all the advertising hasn't really helped."
+
+    show synthea happy
+    synthea "At this point, I'm not sure what kind of messaging will even engage people."
+
+    synthea "But if there's nothing to write about, then there's nothing to set your products apart!"
+
+    synthea "The 2-in-1 baby swing and stand mixer isn't going to sell itself."
+
+    # We have to believe that things can get better.
+
+    show synthea shocked
+    synthea "That's... true."
+
+    synthea "Maybe hope is what's missing in this world."
+
+    show synthea sad
+    synthea "I... don't think I like my job much anymore, to be honest."
+
+    synthea "{ink}We've been working so hard to make things appealing to everyone, we haven't stopped to wonder if we should.{/ink}"
