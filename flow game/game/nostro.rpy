@@ -1,4 +1,5 @@
 label nostro:
+    scene bg castle
     "A cold stone room, lit by wall-mounted candles. Flickering coals sit in the untended fireplace."
 
     "A mortal sits before me at a writing desk, tapping his fingers."
@@ -110,7 +111,7 @@ label nostro:
 
     # MENU WHERE YOU CAN HELP
         nostro "Er, sorry, but I am not really certain how that phrase is helpful in this scenario."
-
+    
     nostro "Oh, I suppose that will do."
 
     nostro "Now that I consider it, it does fit into the trapper's motives."
@@ -165,7 +166,7 @@ label nostro:
 
     # so that from now on, every time you jump back to Nostro, he's writing
     while True:
-        "Nostro is writing with fervour - his quill scratches so quickly it threatens to shred the paper."
+        "Nostro is writing with fervour - his pen scratches so quickly it threatens to shred the paper."
 
         "Nostro is tapping his fingers, deep in thought. An ink smudge stains his fingertips."
 
