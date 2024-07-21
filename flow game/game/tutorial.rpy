@@ -1,17 +1,19 @@
+define elias = Character("Elias", color="#5d773a")
+define mc = Character("???", color="#685d4b")
+
 label tutorial:
     $ ink = 100
 
-    scene bg skies
-    stop music fadeout 1.0
-    play music "tutorial.mp3" fadein 1.0
+    scene bg dusk
 
     "But am I truly ready?"
 
     elias "I see you have arrived."
 
+    show synthea grin
     elias "You look nervous."
 
-    mc "I... am."
+    "I... am."
 
     elias "There is no need to be. Trust in your knowledge. We have taught you all that we know."
 

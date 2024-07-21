@@ -1,4 +1,6 @@
-﻿image elias happy:
+﻿transform default_zoom:
+    zoom 1.5
+image elias happy:
     "images/Elias/elias happy.png"
     default_zoom
 image elias neutral:
@@ -11,70 +13,119 @@ image elias surprise:
     "images/Elias/elias surprise.png"
     default_zoom
 
+image synthea angry:
+    "images/Synthea/synthea angry.png"
+    default_zoom
+image synthea grin:
+    "images/Synthea/synthea grin.png"
+    default_zoom
+image synthea happy:
+    "images/Synthea/synthea happy.png"
+    default_zoom
+image synthea sad:
+    "images/Synthea/synthea sad.png"
+    default_zoom
+image synthea shocked:
+    "images/Synthea/synthea shocked.png"
+    default_zoom
 
+image peregrine confused:
+    "images/Peregrine/peregrine confused.png"
+    default_zoom
+image peregrine distracted:
+    "images/Peregrine/peregrine distracted.png"
+    default_zoom
+image peregrine mad:
+    "images/Peregrine/peregrine mad.png"
+    default_zoom
+image peregrine neutral:
+    "images/Peregrine/peregrine neutral.png"
+    default_zoom
+image peregrine shocked:
+    "images/Peregrine/peregrine shocked.png"
+    default_zoom
+image peregrine smile:
+    "images/Peregrine/peregrine smile.png"
+    default_zoom
+image peregrine talking:
+    "images/Peregrine/peregrine talking.png"
+    default_zoom
+image peregrine tired:
+    "images/Peregrine/peregrine tired.png"
+    default_zoom
 
+image nostro angry:
+    "images/Nostro/nostro angry.png"
+    default_zoom
+image nostro happy:
+    "images/Nostro/nostro happy.png"
+    default_zoom
+image nostro knowing:
+    "images/Nostro/nostro knowing.png"
+    default_zoom
+image nostro sign:
+    "images/Nostro/nostro sign.png"
+    default_zoom
+image nostro smile:
+    "images/Nostro/nostro smile.png"
+    default_zoom
+image nostro veryhappy:
+    "images/Nostro/nostro veryhappy.png"
+    default_zoom
+image nostro worried:
+    "images/Nostro/nostro worried.png"
+    default_zoom
 
+image toshi angry:
+    "images/Toshi/toshi angry.png"
+    default_zoom
+image toshi bored:
+    "images/Toshi/toshi bored.png"
+    default_zoom
+image toshi frown:
+    "images/Toshi/toshi frown.png"
+    default_zoom
+image toshi frownmasked:
+    "images/Toshi/toshi frownmasked.png"
+    default_zoom
+image toshi grin:
+    "images/Toshi/toshi grin.png"
+    default_zoom
+image toshi happy:
+    "images/Toshi/toshi happy.png"
+    default_zoom
+image toshi sad:
+    "images/Toshi/toshi sad.png"
+    default_zoom
+image toshi sadmasked:
+    "images/Toshi/toshi sadmasked.png"
+    default_zoom
+image toshi satisfied:
+    "images/Toshi/toshi satisfied.png"
+    default_zoom
+image toshi smile:
+    "images/Toshi/toshi smile.png"
+    default_zoom
+image toshi smilemasked:
+    "images/Toshi/toshi smilemasked.png"
+    default_zoom
+image toshi suprisedmasked:
+    "images/Toshi/toshi suprisedmasked.png"
+    default_zoom
 
-
-# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define s = Character("Narrator")
-
-#Declare music
 define audio.gamemusic = "audio/teller-of-the-tales-by-kevin-macleod-from-filmmusic-io.mp3"
-
-# The game starts here.
 
 label start:
     play music gamemusic
 
-    jump timeline_demo
-
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    s "You've created a new Ren'Py game."
-
-    s "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat erat libero, ac feugiat diam pharetra tincidunt.
-    Nullam tellus sem, semper sit amet tincidunt ac, dapibus at mauris."
+    jump tutorial
 
     menu:
         "Option 1":
             "You chose option 1."
         "Option 2":
             "You chose option 2."
-        "Option 3":
-            "You chose option 3."
-        "Option 4 is a bit longer, a tiny tiny bit longer so the button is bigger but just a bit":
-            "You chose option 4 which is a bit longer I admit."
-        "Unlock some Gallery images":
-            ##Condition defined in gallery/galleryA.rpy, gallery/galleryB.rpy etc...)
-            $ persistent.pg1_2 = True
-            $ persistent.pg1_5 = True
-            $ persistent.pg1_4 = True
-            $ persistent.pg2_2 = True
-            $ persistent.pg2_6 = True
-            $ persistent.pg3_5 = True
-            $ persistent.pg4_4 = True
-            $ persistent.pg4_6 = True
 
-
-    s "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat erat libero, ac feugiat diam pharetra tincidunt. Nullam tellus sem, semper sit amet tincidunt ac, dapibus at mauris. "
-    s "Donec sit amet placerat risus. Nulla facilisi. Sed maximus nisi et nulla facilisis luctus. Proin velit purus, volutpat id lectus sed, scelerisque fringilla velit."
-    # This ends the game.
-
+label game_end:
+    "Tada! You have won the game"
     return
