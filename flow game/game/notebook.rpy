@@ -1,8 +1,8 @@
 screen notebook_display_toggle:
     zorder 92
     imagebutton:
-        idle "gui/button/notebookbutton_idle.png"
-        hover "gui/button/notebookbutton_hover.png"
+        idle "gui/button/notebookbutton_hover.png"
+        hover "gui/button/notebookbutton_selected.png"
         action ToggleScreen("notebook_item_description")
         xalign 0.05
         yalign 0.1
@@ -43,7 +43,7 @@ screen notebook_item_description:
                     selected False
 
 
-label notebook_test:   
+label notebook_demo:   
 
     "Hello {font=gui/font/1546 Poliphile W00 Normal.ttf}{size=24}{b}darling ~{/b}{/size}{/font}."
 

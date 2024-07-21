@@ -44,3 +44,5 @@ label ink_demo:
             $ ink += 1
         pause(0.0001)
     "demo [goal]"
+
+    jump timeline_demo
