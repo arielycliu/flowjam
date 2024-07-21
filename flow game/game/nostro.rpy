@@ -172,12 +172,14 @@ label nostro3:
     nostro "Oh, you would be surprised, [name]."
 
     show nostro knowing
+    $ notebook_items.append("We mortals can live very long. If not in life, then in spirit.")
     nostro "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}We mortals can live very long. If not in life, then in spirit.{/b}{/size}{/font} And I intend to lead a very long life indeed." 
 
     nostro "There is such a great deal left to accomplish. I feel as though I am filled to the brim with ideas to share with the world at large."
 
     nostro "It is difficult to imagine passing away before I have done so."
 
+    $ notebook_items.append("at least I will go to my own death knowing that I have not let my dreams slip idly by.")
     nostro "And in the unlikely case of failure - {font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}at least I will go to my own death knowing that I have not let my dreams slip idly by.{/b}{/size}{/font}"
 
     mc "Of course. Your ambition is respectable, honestly."
