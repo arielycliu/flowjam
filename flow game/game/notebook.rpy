@@ -45,54 +45,20 @@ screen notebook_item_description:
 
 label notebook_test:   
 
-    "Show ink"
-
-    show screen bars
-    $ ink = 0
-    while ink < 100:
-        $ ink += 1
-        pause(0.0001)
-    "demo 100"
-
-    while ink != 50:
-        if ink > 50:
-            $ ink -= 1
-        else:
-            $ ink += 1
-        pause(0.0001)
-    "demo 50"
-
-    while ink != 70:
-        if ink > 70:
-            $ ink -= 1
-        else:
-            $ ink += 1
-        pause(0.0001)
-    "demo 70"
-
-    $ goal = 20
-    while ink != goal:
-        if ink > goal:
-            $ ink -= 1
-        else:
-            $ ink += 1
-        pause(0.0001)
-    "demo [goal]"
-
-
-    "Hello {font=gui/font/Poliphile.ttf}{size=24}{b}darling ~{/b}{/size}{/font}."
+    "Hello {font=gui/font/1546 Poliphile W00 Normal.ttf}{size=24}{b}darling ~{/b}{/size}{/font}."
 
     show screen notebook_display_toggle
     "See that notebook button?"
 
-    "Let's add a phrase to it. How about {font=gui/font/Poliphile.ttf}{size=24}{b}As the ink flows{/b}{/size}{/font}?"
+    "Let's add a phrase to it. How about {font=gui/font/1546 Poliphile W00 Normal.ttf}{size=24}{b}As the ink flows{/b}{/size}{/font}?"
     $ notebook_items.append("As the ink flows")
 
     "Open it and see."
 
-    "Let's add one more phrase. Try {font=gui/font/Poliphile.ttf}{size=24}{b}In the flow, time stands still.{/b}{/size}{/font}"
+    "Let's add one more phrase. Try {font=gui/font/1546 Poliphile W00 Normal.ttf}{size=24}{b}In the flow, time stands still.{/b}{/size}{/font}"
     $ notebook_items.append("In the flow, time stands still.")
 
     "Check it out."
     hide screen notebook_display_toggle
-    return
+    
+    jump ink_demo
