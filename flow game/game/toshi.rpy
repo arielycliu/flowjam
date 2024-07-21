@@ -1,8 +1,15 @@
 define toshi = Character("Toshi")
 define toshi_unknown = Character("???")
 
-label toshi:
-    scene bg gazebo
+screen fullscreen_garden:
+    add "images/Backgrounds/bg garden.jpg" xpos 0 ypos 0 size (config.screen_width, config.screen_height) 
+
+transform stretch_to_fill:
+    xysize (config.screen_width, config.screen_height)
+
+
+label toshi1:
+    show bg garden at stretch_to_fill zorder 0
     "On a balcony overlooking a grand maple garden, a mortal sits, surrounded by balls of paper."
 
     show toshi sadmasked
@@ -100,16 +107,30 @@ label toshi:
     show toshi grin
     toshi "I've never wooed anyone."
 
+label toshi1_menu:
     show toshi bored
     toshi "Honestly, I'm not sure I even should."
+    define wrong_answer_label = "toshi1_wrong"
+    define right_answer_label = "toshi1_right"
+    define right_answer = "People can feel when you're being genuine, even if they think they can't tell."
+    show screen notebook_display_toggle
+    show screen notebook_menu
+    "What will you choose?"
 
-    # MENU WHERE YOU CAN HELP (USE SYNTHEA INK)
-        show toshi frownmasked
-        toshi "What does that mean?"
+label toshi1_wrong: 
+    $ ink = ink - 5
+    show toshi frownmasked
+    toshi "What does that mean?"
+    jump toshi1_menu
 
+label toshi1_right: 
+    hide screen notebook_menu
+    $ ink = ink - 5
     show toshi sad
     toshi "Huh?"
+    jump toshi2
 
+label toshi2:
     toshi "You hear that a lot, right?"
 
     show toshi smile
@@ -163,22 +184,36 @@ label toshi:
     toshi "Perhaps."
 
     show toshi sad
-    $ notebook_items.append()
+    $ notebook_items.append("But honesty never ends well in the long run. I know that from experience.")
     toshi "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}But honesty never ends well in the long run. I know that from experience.{/b}{/size}{/font}"
 
     show toshi sadmasked
     toshi "I'm never letting that happen again."
 
+label toshi2_menu:
     show toshi frownmasked
     toshi "Maybe this really is a bad idea."
+    define wrong_answer_label = "toshi2_wrong"
+    define right_answer_label = "toshi2_right"
+    define right_answer = "But if I keep pretending, I'm only going to be living someone else's life for the rest of mine."
+    show screen notebook_display_toggle
+    show screen notebook_menu
+    "What will you choose?"
 
-    # MENU WHERE YOU CAN HELP (USE PEREGRINE INK)
-        show toshi frownmasked
-        toshi "What does that mean?"
+label toshi2_wrong: 
+    $ ink = ink - 5
+    show toshi frownmasked
+    toshi "What does that mean?"
+    jump toshi2_menu
 
+label toshi2_right: 
+    hide screen notebook_menu
+    $ ink = ink - 5
     show toshi grin
     toshi "Ah, you make such a good case."
+    jump toshi3
 
+label toshi3:
     toshi "As though it is so simple."
 
     show toshi smile
@@ -222,13 +257,30 @@ label toshi:
     show toshi sadmasked
     toshi "Forever."
 
-    # MENU WHERE YOU CAN HELP (USE NOSTRO INK)
-        show toshi frownmasked
-        toshi "What does that mean?"
+label toshi3_menu:
+    show toshi frownmasked
+    toshi "Maybe this really is a bad idea."
+    define wrong_answer_label = "toshi3_wrong"
+    define right_answer_label = "toshi3_right"
+    define right_answer = "at least I will go to my own death knowing that I have not let my dreams slip idly by."
+    show screen notebook_display_toggle
+    show screen notebook_menu
+    "What will you choose?"
 
+label toshi3_wrong: 
+    $ ink = ink - 5
+    show toshi frownmasked
+    toshi "What does that mean?"
+    jump toshi3_menu
+
+label toshi3_right: 
+    hide screen notebook_menu
+    $ ink = ink - 5
     show toshi sad
     toshi "That's..."
+    jump toshtoshi3andahalfi4
 
+label toshi3andahalf:
     toshi "I don't know."
 
     toshi "I don't know how to feel. I'll have to think on it."
@@ -236,6 +288,7 @@ label toshi:
     show toshi grin
     toshi "Please leave me alone for a while."
 
+label toshi4:
     # so that from now on, every time you jump back to Toshi, he's writing
     while True:
         "Toshi thumbs the edges of his mask, and flinches when he pokes the ears too hard."

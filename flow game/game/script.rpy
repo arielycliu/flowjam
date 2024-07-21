@@ -109,8 +109,8 @@ image toshi smile:
 image toshi smilemasked:
     "images/Toshi/toshi smilemasked.png"
     default_zoom
-image toshi suprisedmasked:
-    "images/Toshi/toshi suprisedmasked.png"
+image toshi surprisedmasked:
+    "images/Toshi/toshi surprisedmasked.png"
     default_zoom
 
 define audio.gamemusic = "audio/teller-of-the-tales-by-kevin-macleod-from-filmmusic-io.mp3"
@@ -121,7 +121,7 @@ default ink = 100
 label start:
     play music gamemusic
 
-    jump nostro1
+    jump toshi1
 
 label game_end:
     "Tada! You have won the game"

@@ -107,7 +107,8 @@ label peregrine:
     show peregrin neutral
     peregrine "Really, it's like no one learns from their mistakes around here."
 
-    peregrine "{ink}And I've worked really, really hard to be in this position.{/ink}"
+    $ notebook_items.append("And I've worked really, really hard to be in this position.")
+    peregrine "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}And I've worked really, really hard to be in this position.{/b}{/size}{/font}"
 
     peregrine "I left my little brother in the fields for this, after all! And the knights' wages would make sure my family never goes hungry."
 
@@ -167,7 +168,8 @@ label peregrine:
     peregrine "It's been very hard work, I'll have you know."
 
     show peregrine neutral
-    peregrine "{ink}But if I keep pretending, I'm only going to be living someone else's life for the rest of mine.{/ink} Peregrine Rolfe, very average boy knight apprentice."
+    $ notebook_items.append("But if I keep pretending, I'm only going to be living someone else's life for the rest of mine.")
+    peregrine "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}But if I keep pretending, I'm only going to be living someone else's life for the rest of mine.{/b}{/size}{/font} Peregrine Rolfe, very average boy knight apprentice."
  
     peregrine "Actually, I like the name all right. I think I'll keep that."
 
