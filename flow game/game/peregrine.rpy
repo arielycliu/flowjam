@@ -17,7 +17,7 @@ label peregrine:
 
     "Even knowing I cannot be killed, I feel a pinprick of fear."
 
-    "I didn't know mortals could touch me."
+    "Can mortals hurt us?"
 
     "Shouldn't Elias have mentioned this?"
 
