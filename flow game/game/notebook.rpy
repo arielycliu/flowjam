@@ -63,14 +63,6 @@ label notebook_demo:
     
     jump ink_demo
 
-label notebook_menu_demo:
-    define wrong_answer_label = "label_b"
-    define right_answer_label = "label_a"
-    define right_answer = "a"
-    $ notebook_items = ["a", "b"]
-    show screen notebook_menu
-    "What will you choose?"
-
 screen notebook_menu:      
     modal True  
     window:
@@ -96,12 +88,22 @@ screen notebook_menu:
                         action Jump (wrong_answer_label)
                         selected False
 
-label label_a:
-    hide screen notebook_menu
-    "You have a"
-    return
+# label notebook_menu_demo:
+#     define wrong_answer_label = "label_b"
+#     define right_answer_label = "label_a"
+#     define right_answer = "a"
+#     show screen notebook_display_toggle
+#     show screen notebook_menu
+#     "What will you choose?"
 
-label label_b:
-    hide screen notebook_menu
-    "You have b, which is wrong"
-    return
+# label label_a:
+#     hide screen notebook_menu
+#     $ notebook_items.remove("a")
+#     "You have a"
+#     return
+
+# label label_b:
+#     hide screen notebook_menu
+#     $ notebook_items.remove("b")
+#     "You have b, which is wrong"
+#     return

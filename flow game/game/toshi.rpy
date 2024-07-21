@@ -1,3 +1,6 @@
+define toshi = Character("Toshi")
+define toshi_unknown = Character("???")
+
 label toshi:
     scene bg gazebo
     "On a balcony overlooking a grand maple garden, a mortal sits, surrounded by balls of paper."
@@ -83,7 +86,8 @@ label toshi:
     toshi "Not like..."
 
     show toshi smilemasked
-    toshi "{ink}Her ocean-blue eyes and snow-white hair captured my attention. When she smiled, she was the only person in the room to me.{/ink}"
+    $ notebook_items.append("Her ocean-blue eyes and snow-white hair captured my attention. When she smiled, she was the only person in the room to me.")
+    toshi "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}Her ocean-blue eyes and snow-white hair captured my attention. When she smiled, she was the only person in the room to me.{/b}{/size}{/font}"
 
     show toshi sad
     toshi "Not like that."
@@ -133,10 +137,12 @@ label toshi:
 
     toshi "I've never really chosen to be myself."
 
-    toshi "{ink}I've only kept the pieces that are inoffensive to everyone.{/ink}"
+    $ notebook_items.append("I've only kept the pieces that are inoffensive to everyone.")
+    toshi "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}I've only kept the pieces that are inoffensive to everyone.{/b}{/size}{/font}"
 
     show toshi grin
-    toshi "{ink}A handsome smile and a flattering voice will get you far.{/ink}"
+    $ notebook_items.append("A handsome smile and a flattering voice will get you far.")
+    toshi "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}A handsome smile and a flattering voice will get you far.{/b}{/size}{/font}"
 
     toshi "I don't think I could keep that face up forever."
 
@@ -157,7 +163,8 @@ label toshi:
     toshi "Perhaps."
 
     show toshi sad
-    toshi "{ink}But honesty never ends well in the long run. I know that from experience.{/ink}"
+    $ notebook_items.append()
+    toshi "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}But honesty never ends well in the long run. I know that from experience.{/b}{/size}{/font}"
 
     show toshi sadmasked
     toshi "I'm never letting that happen again."
@@ -195,7 +202,8 @@ label toshi:
     toshi "Really, keeping some distance is better for everyone."
 
     show toshi grin
-    toshi "That's why I find {ink}lying can always solve problems. Or make things better. Or if not better, more interesting.{/ink}"
+    $ notebook_items.append("lying can always solve problems. Or make things better. Or if not better, more interesting.")
+    toshi "That's why I find {font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}lying can always solve problems. Or make things better. Or if not better, more interesting.{/b}{/size}{/font}"
 
     toshi "Or if not more interesting..."
 

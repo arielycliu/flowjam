@@ -115,10 +115,13 @@ image toshi suprisedmasked:
 
 define audio.gamemusic = "audio/teller-of-the-tales-by-kevin-macleod-from-filmmusic-io.mp3"
 
+default name = "???"
+default ink = 100
+
 label start:
     play music gamemusic
 
-    jump tutorial
+    jump nostro1
 
 label game_end:
     "Tada! You have won the game"
