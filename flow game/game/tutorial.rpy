@@ -38,6 +38,7 @@ label tutorial:
 
     elias "Go on now. Give it a try."
 
+    """
     T
     You are ready. Should you prove yourself worthy, and cement yourself in the hearts of your devoted, you you will enter into the pantheon.
 
@@ -91,6 +92,7 @@ label tutorial:
     Spend your energy wisely, and you may attract more yet.
 
     Go on, then. I wish you all the best.
+    """
 
     show elias happy
     elias "Goodbye, [name]!"

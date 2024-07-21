@@ -1,6 +1,6 @@
 label toshi:
 
-    "A delighted grin sweeps across his face.
+    "A delighted grin sweeps across his face."
 
     toshi "Pleased to meet you. I wasn't sure you'd answer."
 
