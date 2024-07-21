@@ -62,3 +62,46 @@ label notebook_demo:
     hide screen notebook_display_toggle
     
     jump ink_demo
+
+label notebook_menu_demo:
+    define wrong_answer_label = "label_b"
+    define right_answer_label = "label_a"
+    define right_answer = "a"
+    $ notebook_items = ["a", "b"]
+    show screen notebook_menu
+    "What will you choose?"
+
+screen notebook_menu:      
+    modal True  
+    window:
+        background "#4f39284a"
+        xsize 1290
+        ysize 500
+        xalign 0.5
+        yalign 0.4
+        vbox:
+            box_wrap True
+            box_wrap_spacing 10
+            spacing 10
+            xoffset 20
+            yoffset 20
+            style_prefix "inv"
+            for item in notebook_items:
+                if item == right_answer:
+                    textbutton item:
+                        action Jump (right_answer_label)
+                        selected False
+                else:
+                    textbutton item:
+                        action Jump (wrong_answer_label)
+                        selected False
+
+label label_a:
+    hide screen notebook_menu
+    "You have a"
+    return
+
+label label_b:
+    hide screen notebook_menu
+    "You have b, which is wrong"
+    return
