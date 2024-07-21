@@ -4,7 +4,7 @@ label nostro1:
     show screen timelineButton
     show screen notebook_display_toggle
     show screen inkbar
-    scene bg castle
+    scene bg castle at stretch_to_fill zorder 0
 
     "A cold stone room, lit by wall-mounted candles. Flickering coals sit in the untended fireplace."
 

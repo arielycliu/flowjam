@@ -1,5 +1,8 @@
+transform stretch_to_fill:
+    xysize (config.screen_width, config.screen_height)
+
 label peregrine1:
-    scene bg commonroom
+    scene bg commonroom at stretch_to_fill zorder 0
     "A mortal kneels against a wall in a squire's lodgings, quill set to parchment."
 
     "Her tongue is sticking slightly out of her mouth, and she hums a simple line of plainsong under her breath."
