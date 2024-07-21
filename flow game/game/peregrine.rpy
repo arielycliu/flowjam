@@ -120,11 +120,11 @@ label peregrine:
     # MENU FROM SYNTHEA
 
     show peregrine smile
-    peregrine "Exactly again!"
+    peregrine "See, you get what I'm thinking!"
 
     peregrine "Maybe you do have powers."
 
-    peregrine "You understand my thinking so well."
+    peregrine "You understand me so well."
 
     "She jots some notes down on corner of her parchment."
 
