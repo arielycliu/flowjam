@@ -112,7 +112,7 @@ label toshi1_menu:
     toshi "Honestly, I'm not sure I even should."
     define wrong_answer_label = "toshi1_wrong"
     define right_answer_label = "toshi1_right"
-    define right_answer = ""
+    define right_answer = "People can feel when you're being genuine, even if they think they can't tell."
     show screen notebook_display_toggle
     show screen notebook_menu
     "What will you choose?"
