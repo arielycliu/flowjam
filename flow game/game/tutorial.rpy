@@ -10,15 +10,18 @@ label tutorial:
 
     elias "I see you have arrived."
 
-    show synthea grin
+    show elias happy
     elias "You look nervous."
 
     "I... am."
 
+    show elias neutral
     elias "There is no need to be. Trust in your knowledge. We have taught you all that we know."
 
+    show elias smile
     elias "And now, they shall have their god. You, the creator of stories - the soul of the written word - the inksmith."
 
+    show elias neutral
     elias "But what shall your followers call you? You shall need a title, after all."
 
     python:
@@ -36,71 +39,71 @@ label tutorial:
     elias "You may travel between moments as you like, should the occasion demand it."
 
     show elias smile
-    elias "Simply think of it as {ink}saving{/ink} a bookmark for a later time, if you will."
+    show screen timelineButton
+    define part1 = 0
+    define part2 = 0
+    define part3 = 0
+    define part4 = 0
+    elias "Take a look at the timeline map."
 
-    elias "Go on now. Give it a try."
+    show elias neutral
+    elias "Each section represents the timeline of one of your subjects."
 
-    """
-    T
-    You are ready. Should you prove yourself worthy, and cement yourself in the hearts of your devoted, you you will enter into the pantheon.
+    show elias smile
+    elias "Time flows steadily on, but we have already taught you to swim."
 
-    I have great faith in you, name.
+    elias "You'll be able to weave between different time periods as you wish. But the progress you make in each period cannot be undone."
 
+    show elias neutral
+    elias "A mere mortal cannot comprehend time like we do, such precautions are necessary."
 
-    I shall leave you with one last teaching: the world of mortals 
+    show elias smile
+    show screen notebook_display_toggle
+    elias "Let me show you your second tool, the notebook."
 
-    I shall leave you with one last yeaching, then.
+    show elias neutral
+    elias "Words, like ink, flow and seep into the fabric of time."
 
-    The world of mortals is constrained by the bounds of time, but we are not.
+    show elias smile
+    elias "As the goddess of words and ink, I have no doubt that your ink will always be flowing across the pages of this notebook."
 
+    show elias neutral
+    elias "And when the time comes, and they beg you to guide them. With a notebook full of phrases, you will anyways have the right words to say."
 
+    elias "But choose wisely, for each word can only be written once, and their echoes will shape destiny."
+    
+    show elias smile
+    elias "You are {font=gui/font/1546 Poliphile W00 Normal.ttf}{size=24}{b}ready{/b}{/size}{/font} for your first phrase."
+    $ notebook_items.append("ready")
 
-    The world of mrotals is constrained by time. It marches onward, relentless, and always in the same everlasting line.
+    elias "Open the notebook"
 
-    But gods such as us do not live that way.
+    elias "Now remember, your power comes only from your followers, and as a fledgling god, you have them in short supply."
 
-    We exist instead in the moments - the  times of need, where a prayer is made in our name.
+    elias "Do not waste ink recklessly. Every word of advice will cost you."
 
-    As such, it may be wise to create points which you can return to, should you wish. 
-
-
-
-    above bookmark quote
-
-    try it now mechanic
-
-    Perfect. 
-
-
-    Remember: should you wish to save the spirit of inspiration
-
-
-
-    ok how about you say the first bit
-
-    a What was all that training for if you are going to teach name the important bits now?
-
-    elias oh, eliza. one day, you will understand. sometimes, the best things are simply to be saved for last/
-
-
-
-
-
-
-    Your ink lends you the power to save words of your followers for inspiration. Any of them.
-
-    But do not squander it; your power comes only from your followers, and as a fledgling god, you have them in short supply.
-
-    Spend your energy wisely, and you may attract more yet.
-
-    Go on, then. I wish you all the best.
-    """
+    show screen inkbar
+    $ ink = 0
+    while ink < 100:
+        $ ink += 1
+        pause(0.0001)
+    $ ink = 100
+    elias "When you are out of ink, you are out of words. And you cannot be a goddess of words, without any words."
 
     show elias happy
-    elias "Goodbye, [name]!"
+    elias "Should you prove yourself worthy, and cement yourself in the hearts of your devoted, you you will enter into the pantheon."
+    
+    show elias neutral
+    elias "I have great faith in you, [name]."
 
+    $ narrator("Are you ready?", interact=False)
+    $ result = renpy.display_menu([ (item, "Good") for item in notebook_items ])
+    $ notebook_items.remove("ready")
 
-    "As they wave, I feel a dam breaking."
+    show elias smile
+    elias "Good"
+
+    "I feel a dam breaking."
 
     "A cacophany of voices spills into my mind - [name] {i}[name]{/i} [name!u] [name] [name]"
 

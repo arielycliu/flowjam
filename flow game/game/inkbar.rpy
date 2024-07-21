@@ -1,4 +1,4 @@
-screen bars:
+screen inkbar:
     bar:
         value ink
         range 100
@@ -13,7 +13,7 @@ screen bars:
 label ink_demo:
     "Show ink"
 
-    show screen bars
+    show screen inkbar
     $ ink = 0
     while ink < 100:
         $ ink += 1
