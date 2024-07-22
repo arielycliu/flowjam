@@ -210,7 +210,7 @@ label nostro3_menu:
     nostro "Do you believe my manuscript stands a chance?"
     define wrong_answer_label = "nostro3_wrong"
     define right_answer_label = "nostro3_right"
-    define right_answer = ""
+    define right_answer = "We've been working so hard to make things appealing to everyone, we haven't stopped to wonder if we should."
     show screen notebook_display_toggle
     show screen notebook_menu
     "What will you choose?"
