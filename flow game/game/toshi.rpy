@@ -320,7 +320,6 @@ label toshi2_menu:
     $ wrong_answer_label = "toshi2_wrong"
     $ right_answer_label = "toshi2_right"
     $ right_answer = "But if I keep pretending, I'm only going to be living someone else's life for the rest of mine."
-    show screen notebook_display_toggle
     show screen notebook_menu
     "What should I say?"
 
@@ -418,7 +417,6 @@ label toshi3_menu:
     $ wrong_answer_label = "toshi3_wrong"
     $ right_answer_label = "toshi3_right"
     $ right_answer = "at least I will go to my own death knowing that I have not let my dreams slip idly by."
-    show screen notebook_display_toggle
     show screen notebook_menu
     "What should I say?"
 

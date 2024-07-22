@@ -65,8 +65,11 @@ image nostro happy:
 image nostro knowing:
     "images/Nostro/nostro knowing.png"
     default_character_zoom
-image nostro sign:
-    "images/Nostro/nostro sign.png"
+image nostro neutral:
+    "images/Nostro/nostro neutral.png"
+    default_character_zoom
+image nostro sigh:
+    "images/Nostro/nostro sigh.png"
     default_character_zoom
 image nostro smile:
     "images/Nostro/nostro smile.png"

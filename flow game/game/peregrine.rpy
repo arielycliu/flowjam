@@ -191,7 +191,6 @@ label peregrine1_menu:
     $ wrong_answer_label = "peregrine1_wrong"
     $ right_answer_label = "peregrine1_right"
     $ right_answer = "Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better."
-    show screen notebook_display_toggle
     show screen notebook_menu
     "What should I say?"
     
@@ -258,7 +257,6 @@ label peregrine2_menu:
     $ wrong_answer_label = "peregrine2_wrong"
     $ right_answer_label = "peregrine2_right"
     $ right_answer = "You already know you've got the best product in town. You just need your buyers to believe that."
-    show screen notebook_display_toggle
     show screen notebook_menu
     "What should I say?"
     
@@ -399,7 +397,6 @@ label peregrine3_menu:
     $ wrong_answer_label = "peregrine3_wrong"
     $ right_answer_label = "peregrine3_right"
     $ right_answer = "And I've worked really, really hard to be in this position."
-    show screen notebook_display_toggle
     show screen notebook_menu
     "What should I say?"
 

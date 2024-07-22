@@ -87,6 +87,8 @@ define current_page = 0
 
 screen notebook_menu:
     modal True  # prevent it from automatically advancing or selecting options
+    on "show":
+        action Hide("notebook_item_description")
 
     # lets us still click timeline button
     imagebutton:
@@ -96,6 +98,17 @@ screen notebook_menu:
         yoffset 30
         auto "gui/button/timeline_%s.png"
         action Jump ("call_timelineUI")
+
+    # lets us still click notebook button
+    zorder 92
+    imagebutton:
+        idle "gui/button/notebookbutton_hover.png"
+        hover "gui/button/notebookbutton_selected.png"
+        action ToggleScreen("notebook_item_description")
+        xalign 0.07
+        yalign 0.11
+
+    on "hide" action Hide("notebook_item_description")
 
     window:
         background "#4f39284a"

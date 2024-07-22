@@ -16,6 +16,7 @@ label call_timelineUI:
     hide synthea
     hide toshi
     hide peregrine
+    hide nostro
     call screen TimelineUI
 
 
@@ -49,36 +50,31 @@ screen TimelineUI:
     imagebutton:
         xpos xpos1
         ypos 515
-        idle "Timeline/node_idle.png"
-        hover "Timeline/node_hover.png"
+        auto "Timeline/timenode_%s.png"
         action Jump("timeline_pressed1")
         
     imagebutton:
         xpos xpos2
         ypos 515
-        idle "Timeline/node_idle.png"
-        hover "Timeline/node_hover.png"
+        auto "Timeline/timenode_%s.png"
         action Jump("timeline_pressed2")
     
     imagebutton:
         xpos xpos3
         ypos 515
-        idle "Timeline/node_idle.png"
-        hover "Timeline/node_hover.png"
+        auto "Timeline/timenode_%s.png"
         action Jump("timeline_pressed3")
     
     imagebutton:
         xpos xpos4
         ypos 515
-        idle "Timeline/node_idle.png"
-        hover "Timeline/node_hover.png"
+        auto "Timeline/timenode_%s.png"
         action Jump("timeline_pressed4")
 
     imagebutton:
         xpos xposfinal
         ypos 515
-        idle "Timeline/node_idle.png"
-        hover "Timeline/node_hover.png"
+        auto "Timeline/timenode_%s.png"
         action Jump("timeline_pressed_final")
 
 label timeline_pressed1:
