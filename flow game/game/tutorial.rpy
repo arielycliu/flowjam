@@ -111,4 +111,8 @@ label tutorial:
 
     "Seizing upon one at random, I close my eyes and let time's current sweep me away."
 
+    $ part1 = 1
+    $ part2 = 1
+    $ part3 = 1
+    $ part4 = 1
     jump toshi

@@ -1,6 +1,7 @@
 define nostro = Character("Nostro")
 
 label nostro1:
+    $ part3 = 1
     show screen timelineButton
     show screen notebook_display_toggle
     show screen inkbar
@@ -88,7 +89,7 @@ label nostro1_right:
     jump nostro2
 
 label nostro2:
-
+    $ part3 = 2
     nostro "It carries just the right touch of sentimentality for the scene. Of course, the specific adjectives must be transposed, but that conveys just what I would like it to."
 
     nostro "Oh, I almost feel motivated to uncork one of my vintages. It sounds foolish, but you would be shocked by how long I have been pondering this singular scene."
@@ -171,6 +172,7 @@ label nostro2_right:
     jump nostro3
 
 label nostro3:
+    $ part3 = 3
     nostro "Now that I consider it, it does fit into the trapper's motives."
 
     nostro "Oh, yes, splendid! It really is all falling into place!"
@@ -229,6 +231,7 @@ label nostro3_right:
     jump nostro3andahalf
 
 label nostro3andahalf:
+    $ part3 = 4
     nostro "You cannot imagine how much it means to me to hear you say so, [name]. I do not know what sort of relationship you have had with your worshippers, but I hold your opinion in the highest esteem."
 
     nostro "That is all that I needed your support with, but know that your instruction has been indescribably helpful."

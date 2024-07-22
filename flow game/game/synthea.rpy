@@ -1,5 +1,6 @@
 define synthea = Character("Synthea")
 label synthea1:
+    $ part4 = 1
     scene bg office at stretch_to_fill zorder 0
 
     "A mortal is tapping away at a shimmering image of a keyboard in a technology-filled office."
@@ -86,6 +87,7 @@ label synthea1_right:
 
 
 label synthea2:
+    $ part4 = 2
     synthea "You may just be right."
 
     synthea "That'll work really great for the strobe light tanning bed!"
@@ -138,6 +140,7 @@ label synthea2_right:
     jump synthea3
 
 label synthea3:
+    $ part4 = 3
     synthea "Maybe hope is what's missing in this world."
 
     show synthea sad

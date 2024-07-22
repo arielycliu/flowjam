@@ -9,6 +9,7 @@ transform stretch_to_fill:
 
 
 label toshi1:
+    $ part1 = 1
     show bg garden at stretch_to_fill zorder 0
     "On a balcony overlooking a grand maple garden, a mortal sits, surrounded by balls of paper."
 
@@ -131,6 +132,7 @@ label toshi1_right:
     jump toshi2
 
 label toshi2:
+    $ part1 = 2
     toshi "You hear that a lot, right?"
 
     show toshi smile
@@ -214,6 +216,7 @@ label toshi2_right:
     jump toshi3
 
 label toshi3:
+    $ part1 = 3
     toshi "As though it is so simple."
 
     show toshi smile
@@ -281,6 +284,7 @@ label toshi3_right:
     jump toshi3andahalf
 
 label toshi3andahalf:
+    $ part1 = 4
     toshi "I don't know."
 
     toshi "I don't know how to feel. I'll have to think on it."
