@@ -6,9 +6,9 @@ label nostro1:
     show screen inkbar
     show screen notebook_display_toggle
     show screen timelineButton
-    show bg castle at stretch_to_fill zorder 0
+    show bg castle
 
-    "A cold stone room, lit by wall-mounted candles. Flickering coals sit in the untended fireplace."
+    "A warm wood built room, lit by wall-mounted candles. Flickering coals sit in the untended fireplace."
 
     "A mortal sits before me at a writing desk, tapping his fingers."
 
@@ -74,6 +74,7 @@ label nostro1_menu:
     $ right_answer = "Her ocean-blue eyes and snow-white hair captured my attention. When she smiled, she was the only person in the room to me."
     show screen notebook_display_toggle
     show screen notebook_menu
+    "What should I say?"
     
 
 label nostro1_wrong: 
@@ -98,7 +99,7 @@ label nostro2:
     show screen inkbar
     show screen notebook_display_toggle
     show screen timelineButton
-    show bg castle at stretch_to_fill zorder 0
+    show bg castle
 
     show nostro knowing
     nostro "It carries just the right touch of sentimentality for the scene. Of course, the specific adjectives must be transposed, but that conveys just what I would like it to."
@@ -167,6 +168,7 @@ label nostro2_menu:
     $ right_answer = "lying can always solve problems. Or make things better. Or if not better, more interesting."
     show screen notebook_display_toggle
     show screen notebook_menu
+    "What should I say?"
     
 
 label nostro2_wrong: 
@@ -189,7 +191,7 @@ label nostro3:
     show screen inkbar
     show screen notebook_display_toggle
     show screen timelineButton
-    show bg castle at stretch_to_fill zorder 0
+    show bg castle
 
     show nostro knowing
     nostro "Now that I consider it, it does fit into the trapper's motives."
@@ -234,6 +236,7 @@ label nostro3_menu:
     $ right_answer = "We've been working so hard to make things appealing to everyone, we haven't stopped to wonder if we should."
     show screen notebook_display_toggle
     show screen notebook_menu
+    "What should I say?"
     
 
 label nostro3_wrong: 
@@ -256,7 +259,7 @@ label nostro3andahalf:
     show screen inkbar
     show screen notebook_display_toggle
     show screen timelineButton
-    show bg castle at stretch_to_fill zorder 0
+    show bg castle
     show nostro knowing
     nostro "You cannot imagine how much it means to me to hear you say so, [name]. I do not know what sort of relationship you have had with your worshippers, but I hold your opinion in the highest esteem."
 
@@ -275,7 +278,7 @@ label nostro4:
     show screen inkbar
     show screen notebook_display_toggle
     show screen timelineButton
-    show bg castle at stretch_to_fill zorder 0
+    show bg castle
     show nostro knowing
     while True:
         "Nostro is writing with fervour - his pen scratches so quickly it threatens to shred the paper."

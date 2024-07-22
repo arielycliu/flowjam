@@ -117,11 +117,27 @@ image toshi surprisedmasked:
 
 transform stretch_to_fill:
     xysize (config.screen_width, config.screen_height)
+    xpos 0.5
+    ypos 0.5
+    xanchor 0.5
+    yanchor 0.5
 image bg pinkgalaxy:
     "images/Backgrounds/bg pinkgalaxy.jpg"
     stretch_to_fill
 image bg garden:
     "images/Backgrounds/bg garden.jpg"
+    stretch_to_fill
+image bg office:
+    "images/Backgrounds/bg office.jpg"
+    stretch_to_fill
+image bg breakroom:
+    "images/Backgrounds/bg breakroom.jpg"
+    stretch_to_fill
+image bg knightroom:
+    "images/Backgrounds/bg knightroom.jpg"
+    stretch_to_fill
+image bg castle:
+    "images/Backgrounds/bg castle.jpg"
     stretch_to_fill
 
 define audio.gamemusic = "audio/teller-of-the-tales-by-kevin-macleod-from-filmmusic-io.mp3"

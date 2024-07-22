@@ -184,6 +184,7 @@ label toshi1_menu:
     $ right_answer_label = "toshi1_right"
     $ right_answer = "People can feel when you're being genuine, even if they think they can't tell."
     show screen notebook_menu
+    "What should I say?"
 
 label toshi1_wrong: 
     $ ink = ink - 5
@@ -326,6 +327,7 @@ label toshi2_menu:
     $ right_answer = "But if I keep pretending, I'm only going to be living someone else's life for the rest of mine."
     show screen notebook_display_toggle
     show screen notebook_menu
+    "What should I say?"
 
 label toshi2_wrong: 
     $ ink = ink - 5
@@ -423,6 +425,7 @@ label toshi3_menu:
     $ right_answer = "at least I will go to my own death knowing that I have not let my dreams slip idly by."
     show screen notebook_display_toggle
     show screen notebook_menu
+    "What should I say?"
 
 label toshi3_wrong: 
     $ ink = ink - 5

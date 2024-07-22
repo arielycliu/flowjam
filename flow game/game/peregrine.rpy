@@ -9,7 +9,7 @@ label peregrine1:
     show screen inkbar
     show screen notebook_display_toggle
     show screen timelineButton
-    show bg commonroom at stretch_to_fill zorder 0
+    show bg knightroom
     "A mortal kneels against a wall in a squire's lodgings, quill set to parchment."
 
     "Her tongue is sticking slightly out of her mouth, and she hums a simple line of plainsong under her breath."
@@ -109,6 +109,7 @@ label peregrine1_menu:
     $ right_answer = "Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better."
     show screen notebook_display_toggle
     show screen notebook_menu
+    "What should I say?"
     
 
 label peregrine1_wrong: 
@@ -132,7 +133,7 @@ label peregrine2:
     show screen inkbar
     show screen notebook_display_toggle
     show screen timelineButton
-    show bg commonroom at stretch_to_fill zorder 0
+    show bg knightroom
     show peregrine distracted
     show peregrine smile
     peregrine "That's just the right way to put it."
@@ -163,6 +164,7 @@ label peregrine2_menu:
     $ right_answer = "You already know you've got the best product in town. You just need your buyers to believe that."
     show screen notebook_display_toggle
     show screen notebook_menu
+    "What should I say?"
     
 
 label peregrine2_wrong: 
@@ -185,7 +187,7 @@ label peregrine3:
     show screen inkbar
     show screen notebook_display_toggle
     show screen timelineButton
-    show bg commonroom at stretch_to_fill zorder 0
+    show bg knightroom
     show peregrine smile
     peregrine "Maybe you do have powers."
 
@@ -256,6 +258,7 @@ label peregrine3_menu:
     $ right_answer = "And I've worked really, really hard to be in this position."
     show screen notebook_display_toggle
     show screen notebook_menu
+    "What should I say?"
     
 
 label peregrine3_wrong: 
@@ -306,7 +309,7 @@ label peregrine4:
     show screen inkbar
     show screen notebook_display_toggle
     show screen timelineButton
-    show bg commonroom at stretch_to_fill zorder 0
+    show bg knightroom
     show peregrine smile
     while True:
         "Peregrine puts her hair into her mouth, realizes what she's doing, and takes it back out."

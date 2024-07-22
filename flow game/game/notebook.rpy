@@ -16,6 +16,7 @@ default current_item = ""
 style inv_button is frame:
     xminimum 100
     yminimum 70
+    xmaximum 1100
     xpadding 50
 
 style inv_button_text:
@@ -85,7 +86,7 @@ init python:
 define current_page = 0
 
 screen notebook_menu:
-    modal False  # prevent it from automatically advancing or selecting options
+    modal True  # prevent it from automatically advancing or selecting options
 
     # lets us still click timeline button
     imagebutton:
