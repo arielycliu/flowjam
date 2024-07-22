@@ -1,5 +1,6 @@
-label synthea:
-    scene bg office
+define synthea = Character("Synthea")
+label synthea1:
+    scene bg office at stretch_to_fill zorder 0
 
     "A mortal is tapping away at a shimmering image of a keyboard in a technology-filled office."
 
@@ -58,13 +59,33 @@ label synthea:
 
     synthea "So I'm not sure I'm looking for any specific advice here."
 
+
+label synthea1_menu:
     show synthea grin
     synthea "Any thoughts?"
+    define wrong_answer_label = "synthea1_wrong"
+    define right_answer_label = "synthea1_right"
+    define right_answer = "Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better."
+    show screen notebook_display_toggle
+    show screen notebook_menu
+    "What will you choose?"
+
+label synthea1_wrong: 
+    $ ink = ink - 5
+    synthea "That wasn't what I really had in mind..."
+    jump synthea1_menu
+
+label synthea1_right: 
+    hide screen notebook_menu
+    $ ink = ink - 5
+    synthea "Hmm. There's a thought, huh?"
+
+    jump synthea2
 
     # MENU - Sometimes, I find the unexpected to be the most pleasing.
 
-    synthea "Hmm. There's a thought, huh?"
 
+label synthea2:
     synthea "You may just be right."
 
     synthea "That'll work really great for the strobe light tanning bed!"
@@ -94,13 +115,29 @@ label synthea:
 
     synthea "But if there's nothing to write about, then there's nothing to set your products apart!"
 
+
+label synthea2_menu:
     synthea "The 2-in-1 baby swing and stand mixer isn't going to sell itself."
+    define wrong_answer_label = "synthea2_wrong"
+    define right_answer_label = "synthea2_right"
+    define right_answer = "We have to believe that things can get better."
+    show screen notebook_display_toggle
+    show screen notebook_menu
+    "What will you choose?"
 
-    # We have to believe that things can get better.
+label synthea2_wrong: 
+    $ ink = ink - 5
+    synthea "What are you saying?"
+    jump synthea2_menu
 
+label synthea2_right: 
+    hide screen notebook_menu
+    $ ink = ink - 5
     show synthea shocked
     synthea "That's... true."
+    jump synthea3
 
+label synthea3:
     synthea "Maybe hope is what's missing in this world."
 
     show synthea sad

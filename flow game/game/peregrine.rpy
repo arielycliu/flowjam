@@ -1,6 +1,8 @@
 transform stretch_to_fill:
     xysize (config.screen_width, config.screen_height)
 
+define peregrine = Character("Peregrine")
+
 label peregrine1:
     scene bg commonroom at stretch_to_fill zorder 0
     "A mortal kneels against a wall in a squire's lodgings, quill set to parchment."
