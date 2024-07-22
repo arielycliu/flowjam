@@ -434,12 +434,12 @@ label toshi3_right:
     $ notebook_items.remove("at least I will go to my own death knowing that I have not let my dreams slip idly by.")
     show toshi sad
     toshi "That's..."
-    jump toshi34
+    jump toshi31
 
-label toshi34:
+label toshi31:
     $ part1 = 4
     scene
-    $ toshi_bookmark = "toshi43"
+    $ toshi_bookmark = "toshi31"
     show screen basics
     show bg garden
 
@@ -458,11 +458,11 @@ label toshi4:
     show screen basics
     show bg garden
 
-    show toshi smile
     # so that from now on, every time you jump back to Toshi, he's writing
     while True:
+        show toshi smile
         "Toshi thumbs the edges of his mask, and flinches when he pokes the ears too hard."
-
+        show toshi frown
         "Toshi thinks about his words. He carefully makes a mark on the paper, as though it will run away if he's not careful."
-
+        show toshi grin
         "Toshi bursts out laughing to himself for no apparent reason at all."
