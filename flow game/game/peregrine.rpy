@@ -215,6 +215,7 @@ label peregrine1_right:
 label peregrine2:
     $ part2 = 2
     scene
+    $ peregrine_bookmark = "peregrine2"
     show screen basics
     show bg knightroom
 

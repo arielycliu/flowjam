@@ -17,6 +17,8 @@ label call_timelineUI:
     hide toshi
     hide peregrine
     hide nostro
+    if part1 == part2 == part3 == part4 == 4:
+        jump game_end
     call screen TimelineUI
 
 
@@ -45,7 +47,7 @@ screen TimelineUI:
     default xpos2 = part2_xpos[part2]
     default xpos3 = part3_xpos[part3]
     default xpos4 = part4_xpos[part4]
-    default xposfinal = 1621 if complete else 2500
+    default xposfinal = 1614 if complete else 2500
 
     imagebutton:
         xpos xpos1
@@ -73,8 +75,8 @@ screen TimelineUI:
 
     imagebutton:
         xpos xposfinal
-        ypos 515
-        auto "Timeline/timenode_%s.png"
+        ypos 507
+        auto "Timeline/endtimenode_%s.png"
         action Jump("timeline_pressed_final")
 
 label timeline_pressed1:
