@@ -206,7 +206,6 @@ label peregrine1_right:
     hide screen notebook_menu
     $ ink = ink - 5
     $ check_ink()
-    $ notebook_items.remove("Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better.")
     show peregrine talking
     peregrine "Exactly! Thank you!"
 
@@ -214,6 +213,8 @@ label peregrine1_right:
 
 label peregrine2:
     $ part2 = 2
+    $ notebook_items.remove("Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better.")
+    
     scene
     $ peregrine_bookmark = "peregrine2"
     show screen basics
@@ -276,13 +277,14 @@ label peregrine2_right:
     hide screen notebook_menu
     $ ink = ink - 5
     $ check_ink()
-    $ notebook_items.remove("You already know you've got the best product in town. You just need your buyers to believe that.")
     show peregrine smile
     peregrine "Exactly again!"
     jump peregrine3
 
 label peregrine3:
     $ part2 = 3
+    $ notebook_items.remove("You already know you've got the best product in town. You just need your buyers to believe that.")
+
     scene
     $ peregrine_bookmark = "peregrine3"
     show screen basics
@@ -418,13 +420,14 @@ label peregrine3_right:
     hide screen notebook_menu
     $ ink = ink - 5
     $ check_ink()
-    $ notebook_items.remove("And I've worked really, really hard to be in this position.")
     show peregrine smile
     peregrine "Okay, okay, no need to throw my own words back at me!"
     jump peregrine4
 
 label peregrine4:
     $ part2 = 4
+    $ notebook_items.remove("And I've worked really, really hard to be in this position.")
+    
     scene
     $ peregrine_bookmark = "peregrine4"
     show screen basics

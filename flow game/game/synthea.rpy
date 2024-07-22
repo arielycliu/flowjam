@@ -136,7 +136,6 @@ label synthea1_right:
     hide screen notebook_menu
     $ ink = ink - 5
     $ check_ink()
-    $ notebook_items.remove("Sometimes, I find the unexpected to be the most pleasing.")
     
     show synthea happy
     synthea "Hmm. There's a thought, huh?"
@@ -145,6 +144,8 @@ label synthea1_right:
 
 label synthea2:
     $ part4 = 2
+    $ notebook_items.remove("Sometimes, I find the unexpected to be the most pleasing.")
+    
     scene
     $ synthea_bookmark = "synthea2"
     show screen basics
@@ -232,7 +233,6 @@ label synthea2_right:
     hide screen notebook_menu
     $ ink = ink - 5
     $ check_ink()
-    $ notebook_items.remove("We have to believe that things can get better.")
     
     show synthea shocked
     synthea "That's... true."
@@ -240,6 +240,8 @@ label synthea2_right:
 
 label synthea3:
     $ part4 = 3
+    $ notebook_items.remove("We have to believe that things can get better.")
+    
     scene
     $ synthea_bookmark = "synthea3"
     show screen basics
@@ -333,7 +335,6 @@ label synthea3_right:
     hide screen notebook_menu
     $ ink = ink - 5
     $ check_ink()
-    $ notebook_items.remove("A handsome smile and a flattering voice will get you far.")
 
     show synthea shocked
     synthea "Do you really think so?"
@@ -341,6 +342,8 @@ label synthea3_right:
     
 label synthea4:
     $ part4 = 4
+    $ notebook_items.remove("A handsome smile and a flattering voice will get you far.")
+    
     scene
     $ synthea_bookmark = "synthea4"
     show screen basics

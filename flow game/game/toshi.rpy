@@ -192,13 +192,13 @@ label toshi1_right:
     hide screen notebook_menu
     $ ink = ink - 5
     $ check_ink()
-    $ notebook_items.remove("People can feel when you're being genuine, even if they think they can't tell.")
     show toshi sad
     toshi "Huh?"
     jump toshi2
 
 label toshi2:
     $ part1 = 2
+    $ notebook_items.remove("People can feel when you're being genuine, even if they think they can't tell.")
 
     scene
     $ toshi_bookmark = "toshi2"
@@ -330,13 +330,14 @@ label toshi2_right:
     hide screen notebook_menu
     $ ink = ink - 5
     $ check_ink()
-    $ notebook_items.remove("But if I keep pretending, I'm only going to be living someone else's life for the rest of mine.")
     show toshi grin
     toshi "Ah, you make such a good case."
     jump toshi3
 
 label toshi3:
     $ part1 = 3
+    $ notebook_items.remove("But if I keep pretending, I'm only going to be living someone else's life for the rest of mine.")
+    
     scene
     $ toshi_bookmark = "toshi3"
     show screen basics
@@ -429,13 +430,14 @@ label toshi3_right:
     hide screen notebook_menu
     $ ink = ink - 5
     $ check_ink()
-    $ notebook_items.remove("at least I will go to my own death knowing that I have not let my dreams slip idly by.")
     show toshi sad
     toshi "That's..."
     jump toshi4
 
 label toshi4:
     $ part1 = 4
+    $ notebook_items.remove("at least I will go to my own death knowing that I have not let my dreams slip idly by.")
+    
     scene
     $ toshi_bookmark = "toshi4"
     show screen basics

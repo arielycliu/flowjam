@@ -142,7 +142,6 @@ label nostro1_right:
     hide screen notebook_menu
     $ ink = ink - 5
     $ check_ink()
-    $ notebook_items.remove("Her ocean-blue eyes and snow-white hair captured my attention. When she smiled, she was the only person in the room to me.")
 
     show nostro happy
     nostro "Oh, but that is brilliant!"
@@ -150,6 +149,8 @@ label nostro1_right:
 
 label nostro2:
     $ part3 = 2
+    $ notebook_items.remove("Her ocean-blue eyes and snow-white hair captured my attention. When she smiled, she was the only person in the room to me.")
+    
     scene
     $ nostro_bookmark = "nostro2"
     show screen basics
@@ -301,7 +302,6 @@ label nostro2_right:
     hide screen notebook_menu
     $ ink = ink - 5
     $ check_ink()
-    $ notebook_items.remove("lying can always solve problems. Or make things better. Or if not better, more interesting.")
 
     show nostro happy
     nostro "Oh, I suppose that will do."
@@ -309,6 +309,8 @@ label nostro2_right:
 
 label nostro3:
     $ part3 = 3
+    $ notebook_items.remove("lying can always solve problems. Or make things better. Or if not better, more interesting.")
+    
     scene
     $ nostro_bookmark = "nostro3"
     show screen basics
@@ -401,7 +403,6 @@ label nostro3_right:
     hide screen notebook_menu
     $ ink = ink - 5
     $ check_ink()
-    $ notebook_items.remove("We've been working so hard to make things appealing to everyone, we haven't stopped to wonder if we should.")
 
     show nostro happy
     nostro "Ah. I understand."
@@ -409,6 +410,8 @@ label nostro3_right:
 
 label nostro4:
     $ part3 = 4
+    $ notebook_items.remove("We've been working so hard to make things appealing to everyone, we haven't stopped to wonder if we should.")
+    
     scene
     $ nostro_bookmark = "nostro4"
     show screen basics
