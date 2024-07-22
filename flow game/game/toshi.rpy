@@ -126,6 +126,7 @@ label toshi17:
     show screen toshi_setting
     show bg garden
 
+    show toshi smile
     toshi "There's this girl..."
 
     mc "Ah. A classic motivator for writing, if there ever was one."
