@@ -9,6 +9,13 @@ screen timelineButton:
         action Jump ("call_timelineUI")
 
 label call_timelineUI:
+    hide screen inkbar
+    hide screen notebook_display_toggle
+    hide screen notebook_menu
+    hide elias
+    hide synthea
+    hide toshi
+    hide peregrine
     call screen TimelineUI
 
 
@@ -65,6 +72,48 @@ screen TimelineUI:
         idle "Timeline/node_idle.png"
         hover "Timeline/node_hover.png"
         action Jump("timeline_pressed_final")
+
+label timeline_pressed1:
+    if part1 == 1:
+        jump toshi1
+    elif part1 == 2:
+        jump toshi2
+    elif part1 == 3:
+        jump toshi3
+    elif part1 == 4:
+        jump toshi4
+
+label timeline_pressed2:
+    if part2 == 1:
+        jump peregrine1
+    elif part2 == 2:
+        jump peregrine2
+    elif part2 == 3:
+        jump peregrine3
+    elif part2 == 4:
+        jump peregrine4
+
+
+label timeline_pressed3:
+    if part3 == 1:
+        jump nostro1
+    elif part3 == 2:
+        jump nostro2
+    elif part3 == 3:
+        jump nostro3
+    elif part3 == 4:
+        jump nostro4
+
+label timeline_pressed4:
+    if part4 == 1:
+        jump synthea1
+    elif part4 == 2:
+        jump synthea2
+    elif part4 == 3:
+        jump synthea3
+    elif part4 == 4:
+        jump synthea4
+
 
 label timeline_pressed_final:
     jump game_end

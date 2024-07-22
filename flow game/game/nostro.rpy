@@ -2,16 +2,19 @@ define nostro = Character("Nostro")
 
 label nostro1:
     $ part3 = 1
-    show screen timelineButton
-    show screen notebook_display_toggle
+    scene
     show screen inkbar
-    scene bg castle at stretch_to_fill zorder 0
+    show screen notebook_display_toggle
+    show screen timelineButton
+    show bg castle at stretch_to_fill zorder 0
 
     "A cold stone room, lit by wall-mounted candles. Flickering coals sit in the untended fireplace."
 
     "A mortal sits before me at a writing desk, tapping his fingers."
 
     "He looks up."
+
+    show nostro knowing
     
     nostro "[name]! The esteemed Inksmith themselves! Well, what a sight for sore eyes."
 
@@ -23,7 +26,7 @@ label nostro1:
 
     nostro "It behooves my management."
 
-    $ notebook_items.append("Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better.")
+    $ notebook_items.add("Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better.")
     nostro "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better.{/b}{/size}{/font}"
 
     mc "I see."
@@ -66,9 +69,9 @@ label nostro1:
 
 label nostro1_menu:
     nostro "So, er, would you perchance have any ideas?"
-    define wrong_answer_label = "nostro1_wrong"
-    define right_answer_label = "nostro1_right"
-    define right_answer = "Her ocean-blue eyes and snow-white hair captured my attention. When she smiled, she was the only person in the room to me."
+    $ wrong_answer_label = "nostro1_wrong"
+    $ right_answer_label = "nostro1_right"
+    $ right_answer = "Her ocean-blue eyes and snow-white hair captured my attention. When she smiled, she was the only person in the room to me."
     show screen notebook_display_toggle
     show screen notebook_menu
     "What will you choose?"
@@ -84,12 +87,20 @@ label nostro1_wrong:
 label nostro1_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ notebook_items.remove("Her ocean-blue eyes and snow-white hair captured my attention. When she smiled, she was the only person in the room to me.")
 
     nostro "Oh, but that is brilliant!"
     jump nostro2
 
 label nostro2:
     $ part3 = 2
+    scene
+    show screen inkbar
+    show screen notebook_display_toggle
+    show screen timelineButton
+    show bg castle at stretch_to_fill zorder 0
+
+    show nostro knowing
     nostro "It carries just the right touch of sentimentality for the scene. Of course, the specific adjectives must be transposed, but that conveys just what I would like it to."
 
     nostro "Oh, I almost feel motivated to uncork one of my vintages. It sounds foolish, but you would be shocked by how long I have been pondering this singular scene."
@@ -106,7 +117,7 @@ label nostro2:
 
     nostro "That is simply unacceptable!"
 
-    $ notebook_items.append("a god who has never had wine is like a king who has never seen gold!")
+    $ notebook_items.add("a god who has never had wine is like a king who has never seen gold!")
     nostro "Why, {font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}a god who has never had wine is like a king who has never seen gold!{/b}{/size}{/font}"
 
     nostro "That simply will not do."
@@ -151,9 +162,9 @@ label nostro2:
 
 label nostro2_menu:
     nostro "I could always rewrite the preceding scenes, but I really would rather not if it can be avoided."
-    define wrong_answer_label = "nostro2_wrong"
-    define right_answer_label = "nostro2_right"
-    define right_answer = "lying can always solve problems. Or make things better. Or if not better, more interesting."
+    $ wrong_answer_label = "nostro2_wrong"
+    $ right_answer_label = "nostro2_right"
+    $ right_answer = "lying can always solve problems. Or make things better. Or if not better, more interesting."
     show screen notebook_display_toggle
     show screen notebook_menu
     "What will you choose?"
@@ -167,12 +178,20 @@ label nostro2_wrong:
 label nostro2_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ notebook_items.remove("lying can always solve problems. Or make things better. Or if not better, more interesting.")
 
     nostro "Oh, I suppose that will do."
     jump nostro3
 
 label nostro3:
     $ part3 = 3
+    scene
+    show screen inkbar
+    show screen notebook_display_toggle
+    show screen timelineButton
+    show bg castle at stretch_to_fill zorder 0
+
+    show nostro knowing
     nostro "Now that I consider it, it does fit into the trapper's motives."
 
     nostro "Oh, yes, splendid! It really is all falling into place!"
@@ -188,14 +207,14 @@ label nostro3:
     nostro "Oh, you would be surprised, [name]."
 
     show nostro knowing
-    $ notebook_items.append("We mortals can live very long. If not in life, then in spirit.")
+    $ notebook_items.add("We mortals can live very long. If not in life, then in spirit.")
     nostro "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}We mortals can live very long. If not in life, then in spirit.{/b}{/size}{/font} And I intend to lead a very long life indeed." 
 
     nostro "There is such a great deal left to accomplish. I feel as though I am filled to the brim with ideas to share with the world at large."
 
     nostro "It is difficult to imagine passing away before I have done so."
 
-    $ notebook_items.append("at least I will go to my own death knowing that I have not let my dreams slip idly by.")
+    $ notebook_items.add("at least I will go to my own death knowing that I have not let my dreams slip idly by.")
     nostro "And in the unlikely case of failure - {font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}at least I will go to my own death knowing that I have not let my dreams slip idly by.{/b}{/size}{/font}"
 
     mc "Of course. Your ambition is respectable, honestly."
@@ -210,9 +229,9 @@ label nostro3:
 
 label nostro3_menu:
     nostro "Do you believe my manuscript stands a chance?"
-    define wrong_answer_label = "nostro3_wrong"
-    define right_answer_label = "nostro3_right"
-    define right_answer = "We've been working so hard to make things appealing to everyone, we haven't stopped to wonder if we should."
+    $ wrong_answer_label = "nostro3_wrong"
+    $ right_answer_label = "nostro3_right"
+    $ right_answer = "We've been working so hard to make things appealing to everyone, we haven't stopped to wonder if we should."
     show screen notebook_display_toggle
     show screen notebook_menu
     "What will you choose?"
@@ -226,12 +245,19 @@ label nostro3_wrong:
 label nostro3_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ notebook_items.remove("We've been working so hard to make things appealing to everyone, we haven't stopped to wonder if we should.")
 
     nostro "Ah. I understand."
     jump nostro3andahalf
 
 label nostro3andahalf:
     $ part3 = 4
+    scene
+    show screen inkbar
+    show screen notebook_display_toggle
+    show screen timelineButton
+    show bg castle at stretch_to_fill zorder 0
+    show nostro knowing
     nostro "You cannot imagine how much it means to me to hear you say so, [name]. I do not know what sort of relationship you have had with your worshippers, but I hold your opinion in the highest esteem."
 
     nostro "That is all that I needed your support with, but know that your instruction has been indescribably helpful."
@@ -244,6 +270,13 @@ label nostro3andahalf:
 
 label nostro4:
     # so that from now on, every time you jump back to Nostro, he's writing
+    $ part3 = 4
+    scene
+    show screen inkbar
+    show screen notebook_display_toggle
+    show screen timelineButton
+    show bg castle at stretch_to_fill zorder 0
+    show nostro knowing
     while True:
         "Nostro is writing with fervour - his pen scratches so quickly it threatens to shred the paper."
 

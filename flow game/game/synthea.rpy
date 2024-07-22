@@ -1,7 +1,11 @@
 define synthea = Character("Synthea")
 label synthea1:
     $ part4 = 1
-    scene bg office at stretch_to_fill zorder 0
+    scene
+    show screen inkbar
+    show screen notebook_display_toggle
+    show screen timelineButton
+    show bg office at stretch_to_fill zorder 0
 
     "A mortal is tapping away at a shimmering image of a keyboard in a technology-filled office."
 
@@ -20,7 +24,7 @@ label synthea1:
 
     "Wordlessly, I follow."
 
-    scene bg breakroom
+    scene bg breakroom at stretch_to_fill zorder 0
     "Once inside, she closes the door and gives me a big smile."
 
     show synthea happy
@@ -42,7 +46,8 @@ label synthea1:
 
     synthea "It pays to be genuine in sales nowadays."
 
-    synthea "{ink}People can feel when you're being genuine, even if they think they can't tell.{/ink}"
+    $ notebook_items.add("People can feel when you're being genuine, even if they think they can't tell.")
+    synthea "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}People can feel when you're being genuine, even if they think they can't tell.{/b}{/size}{/font}"
 
     synthea "And I write ad copy for a living."
 
@@ -64,9 +69,9 @@ label synthea1:
 label synthea1_menu:
     show synthea grin
     synthea "Any thoughts?"
-    define wrong_answer_label = "synthea1_wrong"
-    define right_answer_label = "synthea1_right"
-    define right_answer = "Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better."
+    $ wrong_answer_label = "synthea1_wrong"
+    $ right_answer_label = "synthea1_right"
+    $ right_answer = "Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better."
     show screen notebook_display_toggle
     show screen notebook_menu
     "What will you choose?"
@@ -79,6 +84,7 @@ label synthea1_wrong:
 label synthea1_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ notebook_items.remove("Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better.")
     synthea "Hmm. There's a thought, huh?"
 
     jump synthea2
@@ -89,6 +95,12 @@ label synthea1_right:
 
 label synthea2:
     $ part4 = 2
+    scene
+    show screen inkbar
+    show screen notebook_display_toggle
+    show screen timelineButton
+    show bg office at stretch_to_fill zorder 0
+    show synthea happy
     synthea "You may just be right."
 
     synthea "That'll work really great for the strobe light tanning bed!"
@@ -98,7 +110,8 @@ label synthea2:
 
     synthea "I believe in our clients' projects. I really do. And I want them to succeed."
 
-    synthea "{ink}You already know you've got the best product in town. You just need your buyers to believe that.{/ink} But that's precisely the problem."
+    $ notebook_items.add("You already know you've got the best product in town. You just need your buyers to believe that.")
+    synthea "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}You already know you've got the best product in town. You just need your buyers to believe that.{/b}{/size}{/font} But that's precisely the problem."
 
     synthea "Sometimes, customers just don't care about quality."
     
@@ -123,9 +136,9 @@ label synthea2:
 
 label synthea2_menu:
     synthea "The 2-in-1 baby swing and stand mixer isn't going to sell itself."
-    define wrong_answer_label = "synthea2_wrong"
-    define right_answer_label = "synthea2_right"
-    define right_answer = "We have to believe that things can get better."
+    $ wrong_answer_label = "synthea2_wrong"
+    $ right_answer_label = "synthea2_right"
+    $ right_answer = "We have to believe that things can get better."
     show screen notebook_display_toggle
     show screen notebook_menu
     "What will you choose?"
@@ -138,12 +151,19 @@ label synthea2_wrong:
 label synthea2_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ notebook_items.remove("We have to believe that things can get better.")
     show synthea shocked
     synthea "That's... true."
     jump synthea3
 
 label synthea3:
     $ part4 = 3
+    scene
+    show screen inkbar
+    show screen notebook_display_toggle
+    show screen timelineButton
+    show bg office at stretch_to_fill zorder 0
+    show synthea happy
     synthea "Maybe hope is what's missing in this world."
 
     synthea "The constant motion of advertisements, of money, of things..."
@@ -153,7 +173,8 @@ label synthea3:
     show synthea sad
     synthea "I... don't think I like my job much anymore, to be honest."
 
-    synthea "{ink}We've been working so hard to make things appealing to everyone, we haven't stopped to wonder if we should.{/ink}"
+    $ notebook_items.add("We've been working so hard to make things appealing to everyone, we haven't stopped to wonder if we should.")
+    synthea "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}We've been working so hard to make things appealing to everyone, we haven't stopped to wonder if we should.{/b}{/size}{/font}"
 
     synthea "I got into this industry because I was passionate about helping people share their ideas and inventions with the world."
 
@@ -179,13 +200,38 @@ label synthea3:
 
     synthea "But I don't think I'm the type to just pack up my life and leave."
 
+label synthea3_menu:
     synthea "Who knows if I could make it out there."
+    $ wrong_answer_label = "synthea3_wrong"
+    $ right_answer_label = "synthea3_right"
+    $ right_answer = "A handsome smile and a flattering voice will get you far."
+    show screen notebook_display_toggle
+    show screen notebook_menu
+    "What will you choose?"
 
-    # A handsome smile and a flattering voice will get you far.
+label synthea3_wrong: 
+    $ ink = ink - 5
+
+    synthea "Er, sorry, but I am not really certain how that phrase is helpful in this scenario."
+    jump synthea3_menu
+
+label synthea3_right: 
+    hide screen notebook_menu
+    $ ink = ink - 5
+    $ notebook_items.remove("A handsome smile and a flattering voice will get you far.")
 
     show synthea shocked
     synthea "Do you really think so?"
-
+    jump synthea3andahalf
+    
+label synthea3andahalf:
+    $ part4 = 4
+    scene
+    show screen inkbar
+    show screen notebook_display_toggle
+    show screen timelineButton
+    show bg office at stretch_to_fill zorder 0
+    show synthea happy
     mc "Of course, Synthea. You seem so passionate. And you're clearly good at what you do."
 
     show synthea happy
@@ -209,14 +255,23 @@ label synthea3:
     show synthea grin
     synthea "Maybe I will quit!"
 
+label synthea4:
+    $ part4 = 2
+    scene
+    show screen inkbar
+    show screen notebook_display_toggle
+    show screen timelineButton
+    show bg office at stretch_to_fill zorder 0
     show synthea happy
-    synthea "This place is a hellhole, anyway."
 
-    synthea "Just imagine me, leading my own agency."
+    while True:
+        synthea "This place is a hellhole, anyway."
 
-    synthea "Synthea's SuperAds!"
+        synthea "Just imagine me, leading my own agency."
 
-    synthea "Or, uh, something like that."
+        synthea "Synthea's SuperAds!"
 
-    synthea "But it would be mine!"
+        synthea "Or, uh, something like that."
+
+        synthea "But it would be mine!"
 

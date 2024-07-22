@@ -10,12 +10,12 @@ screen notebook_display_toggle:
     on "hide" action Hide("notebook_item_description")
 
 
-default notebook_items = []
+default notebook_items = set()
 default current_item = ""
 
 style inv_button is frame:
     xminimum 100
-    ysize 100
+    yminimum 70
     xpadding 50
 
 style inv_button_text:
@@ -23,25 +23,37 @@ style inv_button_text:
     yalign 0.5
 
 screen notebook_item_description:
-    # modal True  # controls if you can read dialogue and look at notebook at the same time
+    # modal True
     window:
         background "#4f39284a"
         xsize 1290
         ysize 500
         xalign 0.5
         yalign 0.4
-        hbox:
-            box_wrap True
-            box_wrap_spacing 10
+        vbox:
             spacing 10
-            xoffset 20
-            yoffset 20
-            style_prefix "inv"
-            for item in notebook_items:
-                textbutton item:
-                    action SetVariable("current_item", item)
-                    selected False
+            hbox:
+                box_wrap True
+                box_wrap_spacing 10
+                spacing 10
+                xoffset 20
+                yoffset 20
+                style_prefix "inv"
+                
+                for item in get_page_items(notebook_items, current_page):
+                    textbutton item:
+                        action SetVariable("current_item", item)
+                        selected False
 
+            # Navigation buttons
+            hbox:
+                xoffset 30
+                yoffset 30
+                spacing 20
+                if current_page > 0:
+                    textbutton "Previous" action SetVariable("current_page", current_page - 1)
+                if (current_page + 1) * 4 < len(notebook_items):
+                    textbutton "Next" action SetVariable("current_page", current_page + 1)
 
 label notebook_demo:   
 
@@ -51,20 +63,39 @@ label notebook_demo:
     "See that notebook button?"
 
     "Let's add a phrase to it. How about {font=gui/font/1546 Poliphile W00 Normal.ttf}{size=24}{b}As the ink flows{/b}{/size}{/font}?"
-    $ notebook_items.append("As the ink flows")
+    $ notebook_items.add("As the ink flows")
 
     "Open it and see."
 
     "Let's add one more phrase. Try {font=gui/font/1546 Poliphile W00 Normal.ttf}{size=24}{b}In the flow, time stands still.{/b}{/size}{/font}"
-    $ notebook_items.append("In the flow, time stands still.")
+    $ notebook_items.add("In the flow, time stands still.")
 
     "Check it out."
     hide screen notebook_display_toggle
     
     jump ink_demo
 
-screen notebook_menu:      
-    modal True  
+init python:
+    def get_page_items(items, page, items_per_page=4):
+        start = page * items_per_page
+        end = start + items_per_page
+        list_items = list(items)
+        return list_items[start:end]
+
+define current_page = 0
+
+screen notebook_menu:
+    modal False  # prevent it from automatically advancing or selecting options
+
+    # lets us still click timeline button
+    imagebutton:
+        xalign 1.0
+        yalign 0.0
+        xoffset -30
+        yoffset 30
+        auto "gui/button/timeline_%s.png"
+        action Jump ("call_timelineUI")
+
     window:
         background "#4f39284a"
         xsize 1290
@@ -72,21 +103,34 @@ screen notebook_menu:
         xalign 0.5
         yalign 0.4
         vbox:
-            box_wrap True
-            box_wrap_spacing 10
             spacing 10
-            xoffset 20
-            yoffset 20
-            style_prefix "inv"
-            for item in notebook_items:
-                if item == right_answer:
-                    textbutton item:
-                        action Jump (right_answer_label)
-                        selected False
-                else:
-                    textbutton item:
-                        action Jump (wrong_answer_label)
-                        selected False
+            hbox:
+                box_wrap True
+                box_wrap_spacing 10
+                spacing 10
+                xoffset 20
+                yoffset 20
+                style_prefix "inv"
+                
+                for item in get_page_items(notebook_items, current_page):
+                    if item == right_answer:
+                        textbutton item:
+                            action Jump (right_answer_label)
+                            selected False
+                    else:
+                        textbutton item:
+                            action Jump (wrong_answer_label)
+                            selected False
+
+            # Navigation buttons
+            hbox:
+                xoffset 30
+                yoffset 30
+                spacing 20
+                if current_page > 0:
+                    textbutton "Previous" action SetVariable("current_page", current_page - 1)
+                if (current_page + 1) * 4 < len(notebook_items):
+                    textbutton "Next" action SetVariable("current_page", current_page + 1)
 
 # label notebook_menu_demo:
 #     define wrong_answer_label = "label_b"

@@ -5,7 +5,11 @@ define peregrine = Character("Peregrine")
 
 label peregrine1:
     $ part2 = 1
-    scene bg commonroom at stretch_to_fill zorder 0
+    scene
+    show screen inkbar
+    show screen notebook_display_toggle
+    show screen timelineButton
+    show bg commonroom at stretch_to_fill zorder 0
     "A mortal kneels against a wall in a squire's lodgings, quill set to parchment."
 
     "Her tongue is sticking slightly out of her mouth, and she hums a simple line of plainsong under her breath."
@@ -98,11 +102,11 @@ label peregrine1:
     # MENU - TIMES ARE CHANGING FROM NOSTRO
 
 label peregrine1_menu:
-    show peregrine bored
+    show peregrine tired
     peregrine "Honestly, I'm not sure I even should."
-    define wrong_answer_label = "peregrine1_wrong"
-    define right_answer_label = "peregrine1_right"
-    define right_answer = "Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better."
+    $ wrong_answer_label = "peregrine1_wrong"
+    $ right_answer_label = "peregrine1_right"
+    $ right_answer = "Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better."
     show screen notebook_display_toggle
     show screen notebook_menu
     "What will you choose?"
@@ -116,6 +120,7 @@ label peregrine1_wrong:
 label peregrine1_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ notebook_items.remove("Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better.")
     show peregrine talking
     peregrine "Exactly! Thank you!"
 
@@ -123,6 +128,12 @@ label peregrine1_right:
 
 label peregrine2:
     $ part2 = 2
+    scene
+    show screen inkbar
+    show screen notebook_display_toggle
+    show screen timelineButton
+    show bg commonroom at stretch_to_fill zorder 0
+    show peregrine distracted
     show peregrine smile
     peregrine "That's just the right way to put it."
 
@@ -133,10 +144,10 @@ label peregrine2:
 
     mc "Naturally."
 
-    show peregrin neutral
+    show peregrine neutral
     peregrine "Really, it's like no one learns from their mistakes around here."
 
-    $ notebook_items.append("And I've worked really, really hard to be in this position.")
+    $ notebook_items.add("And I've worked really, really hard to be in this position.")
     peregrine "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}And I've worked really, really hard to be in this position.{/b}{/size}{/font}"
 
     peregrine "I left my little brother in the fields for this, after all! And the knights' wages would make sure my family never goes hungry."
@@ -147,9 +158,9 @@ label peregrine2:
 label peregrine2_menu:
     show peregrine neutral
     peregrine "I just need to convince them that I'm the right man for the job."
-    define wrong_answer_label = "peregrine2_wrong"
-    define right_answer_label = "peregrine2_right"
-    define right_answer = "You already know you've got the best product in town. You just need your buyers to believe that."
+    $ wrong_answer_label = "peregrine2_wrong"
+    $ right_answer_label = "peregrine2_right"
+    $ right_answer = "You already know you've got the best product in town. You just need your buyers to believe that."
     show screen notebook_display_toggle
     show screen notebook_menu
     "What will you choose?"
@@ -163,12 +174,19 @@ label peregrine2_wrong:
 label peregrine2_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ notebook_items.remove("You already know you've got the best product in town. You just need your buyers to believe that.")
     show peregrine smile
     peregrine "Exactly again!"
     jump peregrine3
 
 label peregrine3:
     $ part2 = 3
+    scene
+    show screen inkbar
+    show screen notebook_display_toggle
+    show screen timelineButton
+    show bg commonroom at stretch_to_fill zorder 0
+    show peregrine smile
     peregrine "Maybe you do have powers."
 
     peregrine "You understand me so well."
@@ -214,7 +232,7 @@ label peregrine3:
     peregrine "It's been very hard work, I'll have you know."
 
     show peregrine neutral
-    $ notebook_items.append("But if I keep pretending, I'm only going to be living someone else's life for the rest of mine.")
+    $ notebook_items.add("But if I keep pretending, I'm only going to be living someone else's life for the rest of mine.")
     peregrine "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}But if I keep pretending, I'm only going to be living someone else's life for the rest of mine.{/b}{/size}{/font} Peregrine Rolfe, very average boy knight apprentice."
  
     peregrine "Actually, I like the name all right. I think I'll keep that."
@@ -233,9 +251,9 @@ label peregrine3:
 
 label peregrine3_menu:
     peregrine "Without the knighthood... what will I have?"
-    define wrong_answer_label = "peregrine3_wrong"
-    define right_answer_label = "peregrine3_right"
-    define right_answer = "And I've worked really, really hard to be in this position."
+    $ wrong_answer_label = "peregrine3_wrong"
+    $ right_answer_label = "peregrine3_right"
+    $ right_answer = "And I've worked really, really hard to be in this position."
     show screen notebook_display_toggle
     show screen notebook_menu
     "What will you choose?"
@@ -249,6 +267,7 @@ label peregrine3_wrong:
 label peregrine3_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ notebook_items.remove("And I've worked really, really hard to be in this position.")
     show peregrine smile
     peregrine "Okay, okay, no need to throw my own words back at me!"
     jump peregrine3andahalf
@@ -282,6 +301,13 @@ label peregrine3andahalf:
     peregrine "But thank you, seriously!"
 
 label peregrine4:
+    $ part2 = 1
+    scene
+    show screen inkbar
+    show screen notebook_display_toggle
+    show screen timelineButton
+    show bg commonroom at stretch_to_fill zorder 0
+    show peregrine smile
     while True:
         "Peregrine puts her hair into her mouth, realizes what she's doing, and takes it back out."
 

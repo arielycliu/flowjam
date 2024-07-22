@@ -74,7 +74,7 @@ label tutorial:
     
     show elias smile
     elias "You are {font=gui/font/1546 Poliphile W00 Normal.ttf}{size=24}{b}ready{/b}{/size}{/font} for your first phrase."
-    $ notebook_items.append("ready")
+    $ notebook_items.add("ready")
 
     elias "Open the notebook"
 
@@ -103,6 +103,8 @@ label tutorial:
     show elias smile
     elias "Good"
 
+    hide elias smile
+
     "I feel a dam breaking."
 
     "A cacophany of voices spills into my mind - [name] {i}[name]{/i} [name!u] [name] [name]"
@@ -115,4 +117,5 @@ label tutorial:
     $ part2 = 1
     $ part3 = 1
     $ part4 = 1
-    jump toshi
+
+    jump toshi1
