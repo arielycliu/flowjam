@@ -183,6 +183,7 @@ label toshi1_menu:
 
 label toshi1_wrong: 
     $ ink = ink - 5
+    $ check_ink()
     show toshi frownmasked
     toshi "What does that mean?"
     jump toshi1_menu
@@ -190,6 +191,7 @@ label toshi1_wrong:
 label toshi1_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ check_ink()
     $ notebook_items.remove("People can feel when you're being genuine, even if they think they can't tell.")
     show toshi sad
     toshi "Huh?"
@@ -319,6 +321,7 @@ label toshi2_menu:
 
 label toshi2_wrong: 
     $ ink = ink - 5
+    $ check_ink()
     show toshi frownmasked
     toshi "What does that mean?"
     jump toshi2_menu
@@ -326,6 +329,7 @@ label toshi2_wrong:
 label toshi2_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ check_ink()
     $ notebook_items.remove("But if I keep pretending, I'm only going to be living someone else's life for the rest of mine.")
     show toshi grin
     toshi "Ah, you make such a good case."
@@ -402,7 +406,7 @@ label toshi33:
 
 label toshi3_menu:
     scene
-    $ toshi_bookmark = "toshi3_menu"
+    $ toshi_bookmark = "toshi33"
     show screen basics
     show bg garden
 
@@ -416,6 +420,7 @@ label toshi3_menu:
 
 label toshi3_wrong: 
     $ ink = ink - 5
+    $ check_ink()
     show toshi frownmasked
     toshi "What does that mean?"
     jump toshi3_menu
@@ -423,6 +428,7 @@ label toshi3_wrong:
 label toshi3_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ check_ink()
     $ notebook_items.remove("at least I will go to my own death knowing that I have not let my dreams slip idly by.")
     show toshi sad
     toshi "That's..."
@@ -443,9 +449,11 @@ label toshi4:
     show toshi grin
     toshi "Please leave me alone for a while."
 
+    $ toshi_bookmark = "toshi41"
+    jump call_timelineUI
+
 label toshi41:
     scene
-    $ toshi_bookmark = "toshi41"
     show screen basics
     show bg garden
 

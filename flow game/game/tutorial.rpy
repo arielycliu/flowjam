@@ -6,8 +6,6 @@ screen black_screen:
         background "#000000"
 
 label tutorial:
-    $ ink = 100
-
     scene bg pinkgalaxy
 
     "But am I truly ready?"
@@ -80,7 +78,7 @@ label tutorial:
 
     elias "Now remember, your power comes only from your followers, and as a fledgling god, you have them in short supply."
 
-    elias "Do not waste ink recklessly. Every word of advice will cost you."
+    elias "Do not waste ink recklessly. Every word of advice you give will cost you."
 
     show screen inkbar
     $ ink = 0
@@ -88,7 +86,15 @@ label tutorial:
         $ ink += 1
         pause(0.0001)
     $ ink = 100
-    elias "When you are out of ink, you are out of words. And you cannot be a goddess of words, without any words."
+    elias "No ink means no words."
+
+    show elias neutral
+    elias "If you run out of ink, there is nothing I can do. Your very existence will be unraveled from the fabric of reality."
+
+    elias "Find comfort in the fact that such a death would be both painless and instant."
+
+    show elias surprised
+    elias "Actually, I cannot guarantee any such thing. No one has ever survived after all..."
 
     show elias happy
     elias "Should you prove yourself worthy, and cement yourself in the hearts of your devoted, you you will enter into the pantheon."
@@ -99,6 +105,7 @@ label tutorial:
     $ narrator("Are you ready?", interact=False)
     $ result = renpy.display_menu([ (item, "Good") for item in notebook_items ])
     $ notebook_items.remove("ready")
+    $ ink = ink - 5
 
     show elias smile
     elias "Good"

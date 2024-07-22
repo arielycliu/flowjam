@@ -11,8 +11,8 @@ image elias neutral:
 image elias smile:
     "images/Elias/elias smile.png"
     default_character_zoom
-image elias surprise:
-    "images/Elias/elias surprise.png"
+image elias surprised:
+    "images/Elias/elias surprised.png"
     default_character_zoom
 
 image synthea angry:
@@ -169,6 +169,8 @@ label start:
     $ part3 = 0
     $ part4 = 0
 
+    $ ink = 100
+
     jump tutorial
 
 init python:
@@ -177,9 +179,29 @@ init python:
             renpy.jump("game_over")
 
 label game_over:
-    "Unfortunately, you have run out of ink..."
+    scene
+    show bg pinkgalaxy
+    "As the last of the ink leaves you"
+    "You feel your demise fast approaching"
+    "I should have chosen my words more wisely."
+    "I guess this is the end."
+
     return
 
 label game_end:
-    "Tada! You have won the game"
+    scene
+    scene bg pinkgalaxy
+    show screen inkbar
+    show screen notebook_display_toggle
+    hide screen inkbar
+    hide screen notebook_display_toggle
+
+    elias "I see you have returned."
+
+    show elias happy
+    elias "I knew you could do it."
+    
+    show elias smile
+    elias "You've achieved something remarkable. Take a moment to savor this victory—you've earned it."
+
     return

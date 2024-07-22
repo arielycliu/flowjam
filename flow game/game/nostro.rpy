@@ -119,7 +119,7 @@ label nostro16:
 
 label nostro1_menu:
     scene
-    $ nostro_bookmark = "nostro1_menu"
+    $ nostro_bookmark = "nostro16"
     show screen basics
     show bg castle
 
@@ -133,7 +133,7 @@ label nostro1_menu:
     
 label nostro1_wrong: 
     $ ink = ink - 5
-
+    $ check_ink()
     show nostro worried
     nostro "Er, sorry, but I am not really certain how that phrase is helpful in this scenario."
     jump nostro1_menu
@@ -141,6 +141,7 @@ label nostro1_wrong:
 label nostro1_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ check_ink()
     $ notebook_items.remove("Her ocean-blue eyes and snow-white hair captured my attention. When she smiled, she was the only person in the room to me.")
 
     show nostro happy
@@ -277,7 +278,7 @@ label nostro27:
 
 label nostro2_menu:
     scene
-    $ nostro_bookmark = "nostro2_menu"
+    $ nostro_bookmark = "nostro27"
     show screen basics
     show bg castle
 
@@ -291,7 +292,7 @@ label nostro2_menu:
 
 label nostro2_wrong: 
     $ ink = ink - 5
-
+    $ check_ink()
     show nostro neutral
     nostro "Er, sorry, but I am not really certain how that phrase is helpful in this scenario."
     jump nostro2_menu
@@ -299,6 +300,7 @@ label nostro2_wrong:
 label nostro2_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ check_ink()
     $ notebook_items.remove("lying can always solve problems. Or make things better. Or if not better, more interesting.")
 
     show nostro happy
@@ -376,7 +378,7 @@ label nostro33:
 
 label nostro3_menu:
     scene
-    $ nostro_bookmark = "nostro3_menu"
+    $ nostro_bookmark = "nostro33"
     show screen basics
     show bg castle
 
@@ -390,7 +392,7 @@ label nostro3_menu:
 
 label nostro3_wrong: 
     $ ink = ink - 5
-
+    $ check_ink()
     show nostro worried
     nostro "Er, sorry, but I am not really certain how that phrase is helpful in this scenario."
     jump nostro3_menu
@@ -398,16 +400,17 @@ label nostro3_wrong:
 label nostro3_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ check_ink()
     $ notebook_items.remove("We've been working so hard to make things appealing to everyone, we haven't stopped to wonder if we should.")
 
     show nostro happy
     nostro "Ah. I understand."
-    jump nostro41
+    jump nostro4
 
-label nostro41:
+label nostro4:
     $ part3 = 4
     scene
-    $ nostro_bookmark = "nostro41"
+    $ nostro_bookmark = "nostro4"
     show screen basics
     show bg castle
     
@@ -422,9 +425,11 @@ label nostro41:
     show nostro sigh
     nostro "Do not take that to mean that I have dismissed you from my presence, of course. Please, feel free to sit here as long as you wish. My home is yours, Inksmith."
 
-label nostro42:
+    $ nostro_bookmark = "nostro41"
+    jump call_timelineUI
+
+label nostro41:
     scene
-    $ nostro_bookmark = "nostro42"
     show screen basics
     show bg castle
 

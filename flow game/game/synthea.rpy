@@ -113,7 +113,7 @@ label synthea16:
 
 label synthea1_menu:
     scene
-    $ synthea_bookmark = "synthea1_menu"
+    $ synthea_bookmark = "synthea16"
     show screen basics
     show bg breakroom
 
@@ -127,7 +127,7 @@ label synthea1_menu:
 
 label synthea1_wrong: 
     $ ink = ink - 5
-
+    $ check_ink()
     show synthea sad
     synthea "That wasn't what I really had in mind..."
     jump synthea1_menu
@@ -135,6 +135,7 @@ label synthea1_wrong:
 label synthea1_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ check_ink()
     $ notebook_items.remove("Sometimes, I find the unexpected to be the most pleasing.")
     
     show synthea happy
@@ -208,7 +209,7 @@ label synthea23:
 
 label synthea2_menu:
     scene
-    $ synthea_bookmark = "synthea2_menu"
+    $ synthea_bookmark = "synthea23"
     show screen basics
     show bg breakroom
 
@@ -222,7 +223,7 @@ label synthea2_menu:
     
 label synthea2_wrong: 
     $ ink = ink - 5
-
+    $ check_ink()
     show synthea sad
     synthea "That doesn't really make sense"
     jump synthea2_menu
@@ -230,6 +231,7 @@ label synthea2_wrong:
 label synthea2_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ check_ink()
     $ notebook_items.remove("We have to believe that things can get better.")
     
     show synthea shocked
@@ -308,7 +310,7 @@ label synthea33:
 
 label synthea3_menu:
     scene
-    $ synthea_bookmark = "synthea3_menu"
+    $ synthea_bookmark = "synthea33"
     show screen basics
     show bg breakroom
 
@@ -322,7 +324,7 @@ label synthea3_menu:
     
 label synthea3_wrong: 
     $ ink = ink - 5
-
+    $ check_ink()
     show synthea sad
     synthea "I guess, I should just stay here, even if I am a bit unhappy."
     jump synthea3_menu
@@ -330,6 +332,7 @@ label synthea3_wrong:
 label synthea3_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ check_ink()
     $ notebook_items.remove("A handsome smile and a flattering voice will get you far.")
 
     show synthea shocked
@@ -374,9 +377,11 @@ label synthea41:
     show synthea grin
     synthea "Maybe I will quit!"
 
+    $ synthea_bookmark = "synthea42"
+    jump call_timelineUI
+
 label synthea42:
     scene
-    $ synthea_bookmark = "synthea42"
     show screen basics
     show bg breakroom
 

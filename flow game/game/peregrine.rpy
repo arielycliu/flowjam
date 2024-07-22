@@ -183,7 +183,7 @@ label peregrine192:
 
 label peregrine1_menu:
     scene
-    $ peregrine_bookmark = "peregrine1_menu"
+    $ peregrine_bookmark = "peregrine192"
     show screen basics
     show bg knightroom
 
@@ -197,6 +197,7 @@ label peregrine1_menu:
     
 label peregrine1_wrong: 
     $ ink = ink - 5
+    $ check_ink()
     show peregrine confused
     peregrine "What are you saying?"
     jump peregrine1_menu
@@ -204,6 +205,7 @@ label peregrine1_wrong:
 label peregrine1_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ check_ink()
     $ notebook_items.remove("Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better.")
     show peregrine talking
     peregrine "Exactly! Thank you!"
@@ -218,6 +220,9 @@ label peregrine2:
 
     show peregrine smile
     peregrine "That's just the right way to put it."
+
+    $ notebook_items.add("We have to believe that things can get better.")
+    peregrine "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}We have to believe that things can get better.{/b}{/size}{/font}"
 
     show peregrine mad
     peregrine "We can't just value lineage here."
@@ -247,7 +252,7 @@ label peregrine21:
 
 label peregrine2_menu:
     scene
-    $ peregrine_bookmark = "peregrine2_menu"
+    $ peregrine_bookmark = "peregrine21"
     show screen basics
     show bg knightroom
 
@@ -261,6 +266,7 @@ label peregrine2_menu:
     
 label peregrine2_wrong: 
     $ ink = ink - 5
+    $ check_ink()
     show peregrine confused
     peregrine "What are you saying?"
     jump peregrine2_menu
@@ -268,6 +274,7 @@ label peregrine2_wrong:
 label peregrine2_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ check_ink()
     $ notebook_items.remove("You already know you've got the best product in town. You just need your buyers to believe that.")
     show peregrine smile
     peregrine "Exactly again!"
@@ -387,7 +394,7 @@ label peregrine36:
 
 label peregrine3_menu:
     scene
-    $ peregrine_bookmark = "peregrine3_menu"
+    $ peregrine_bookmark = "peregrine36"
     show screen basics
     show bg knightroom
 
@@ -401,6 +408,7 @@ label peregrine3_menu:
 
 label peregrine3_wrong: 
     $ ink = ink - 5
+    $ check_ink()
     show peregrine confused
     peregrine "What are you saying?"
     jump peregrine3_menu
@@ -408,10 +416,11 @@ label peregrine3_wrong:
 label peregrine3_right: 
     hide screen notebook_menu
     $ ink = ink - 5
+    $ check_ink()
     $ notebook_items.remove("And I've worked really, really hard to be in this position.")
     show peregrine smile
     peregrine "Okay, okay, no need to throw my own words back at me!"
-    jump peregrine31
+    jump peregrine4
 
 label peregrine4:
     $ part2 = 4
@@ -462,9 +471,11 @@ label peregrine42:
     show peregrine smile
     peregrine "But thank you, seriously!"
 
+    $ peregrine_bookmark = "peregrine43"
+    jump call_timelineUI
+
 label peregrine43:
     scene
-    $ peregrine_bookmark = "peregrine43"
     show screen basics
     show bg knightroom
 
