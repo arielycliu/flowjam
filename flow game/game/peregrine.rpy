@@ -4,6 +4,7 @@ transform stretch_to_fill:
 define peregrine = Character("Peregrine")
 
 label peregrine1:
+    $ part2 = 1
     scene bg commonroom at stretch_to_fill zorder 0
     "A mortal kneels against a wall in a squire's lodgings, quill set to parchment."
 
@@ -121,6 +122,7 @@ label peregrine1_right:
     jump peregrine2
 
 label peregrine2:
+    $ part2 = 2
     show peregrine smile
     peregrine "That's just the right way to put it."
 
@@ -166,6 +168,7 @@ label peregrine2_right:
     jump peregrine3
 
 label peregrine3:
+    $ part2 = 3
     peregrine "Maybe you do have powers."
 
     peregrine "You understand me so well."
@@ -251,6 +254,7 @@ label peregrine3_right:
     jump peregrine3andahalf
 
 label peregrine3andahalf:
+    $ part2 = 4
     peregrine "Although I appreciate the encouragement."
 
     mc "You've had the determination to make it this far, against your mother's wishes and against all odds."
