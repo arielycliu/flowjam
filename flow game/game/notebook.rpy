@@ -174,3 +174,42 @@ screen notebook_menu:
 #     $ notebook_items.remove("b")
 #     "You have b, which is wrong"
 #     return
+
+label game_over:
+    scene black
+    $ renpy.hide_screen("basics")
+    $ renpy.hide("basics")
+    # show bg pinkgalaxy
+    hide screen inkbar
+    hide screen notebook_display_toggle
+    hide screen timelineButton
+    hide screen notebook_menu
+    
+    "As the last of the ink leaves you, you feel your demise fast approaching"
+    "I should have chosen my words more wisely."
+    "I guess this is the end."
+
+    return
+
+label game_end:
+    scene
+    $ renpy.hide_screen("basics")
+    $ renpy.hide("basics")
+    
+    hide screen inkbar
+    hide screen notebook_display_toggle
+    hide screen timelineButton
+    hide screen notebook_menu
+    show bg pinkgalaxy
+
+    elias "I see you have returned."
+
+    show elias happy
+    elias "I knew you could do it."
+    
+    show elias smile
+    elias "You've achieved something remarkable."
+
+    elias "Take a moment to savor this victory—you've earned it."
+
+    return

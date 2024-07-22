@@ -12,6 +12,7 @@ label call_timelineUI:
     hide screen inkbar
     hide screen notebook_display_toggle
     hide screen notebook_menu
+    hide screen basics
     hide elias
     hide synthea
     hide toshi
