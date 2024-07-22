@@ -118,10 +118,13 @@ define audio.gamemusic = "audio/teller-of-the-tales-by-kevin-macleod-from-filmmu
 default name = "???"
 default ink = 100
 
+transform stretch_to_fill:
+    xysize (config.screen_width, config.screen_height)
+
 label start:
     play music gamemusic
 
-    jump toshi1
+    jump tutorial
 
 label game_end:
     "Tada! You have won the game"
