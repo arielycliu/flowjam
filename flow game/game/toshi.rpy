@@ -435,7 +435,7 @@ label toshi3_right:
     $ notebook_items.remove("at least I will go to my own death knowing that I have not let my dreams slip idly by.")
     show toshi sad
     toshi "That's..."
-    jump toshi3andahalf
+    jump toshi34
 
 label toshi34:
     $ part1 = 4
