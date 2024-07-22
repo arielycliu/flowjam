@@ -417,9 +417,10 @@ label peregrine3_right:
     peregrine "Okay, okay, no need to throw my own words back at me!"
     jump peregrine31
 
-label peregrine31:
+label peregrine4:
+    $ part2 = 4
     scene
-    $ peregrine_bookmark = "peregrine31"
+    $ peregrine_bookmark = "peregrine4"
     show screen basics
     show bg knightroom
 
@@ -433,9 +434,9 @@ label peregrine31:
     show peregrine distracted
     peregrine "I sure hope so."
 
-label peregrine32:
+label peregrine41:
     scene
-    $ peregrine_bookmark = "peregrine32"
+    $ peregrine_bookmark = "peregrine41"
     show screen basics
     show bg knightroom
 
@@ -451,10 +452,9 @@ label peregrine32:
     show peregrine smile
     peregrine "But hey, like I said - I'll take all the help I can get."
 
-label peregrine33:
-    $ part2 = 4
+label peregrine42:
     scene
-    $ peregrine_bookmark = "peregrine33"
+    $ peregrine_bookmark = "peregrine42"
     show screen basics
     show bg knightroom
 
@@ -466,10 +466,9 @@ label peregrine33:
     show peregrine smile
     peregrine "But thank you, seriously!"
 
-label peregrine4:
-    $ part2 = 4
+label peregrine43:
     scene
-    $ peregrine_bookmark = "peregrine4"
+    $ peregrine_bookmark = "peregrine43"
     show screen basics
     show bg knightroom
 

@@ -434,12 +434,12 @@ label toshi3_right:
     $ notebook_items.remove("at least I will go to my own death knowing that I have not let my dreams slip idly by.")
     show toshi sad
     toshi "That's..."
-    jump toshi31
+    jump toshi4
 
-label toshi31:
+label toshi4:
     $ part1 = 4
     scene
-    $ toshi_bookmark = "toshi31"
+    $ toshi_bookmark = "toshi4"
     show screen basics
     show bg garden
 
@@ -451,10 +451,9 @@ label toshi31:
     show toshi grin
     toshi "Please leave me alone for a while."
 
-label toshi4:
-    $ part1 = 4
+label toshi41:
     scene
-    $ toshi_bookmark = "toshi4"
+    $ toshi_bookmark = "toshi41"
     show screen basics
     show bg garden
 
