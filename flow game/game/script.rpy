@@ -152,6 +152,7 @@ screen basics:
     use inkbar
     use notebook_display_toggle
     use timelineButton
+    use monitor_ink
 
 label start:
     play music gamemusic
@@ -167,6 +168,15 @@ label start:
     $ part4 = 0
 
     jump tutorial
+
+init python:
+    def check_ink():
+        if ink <= 0:
+            renpy.jump("game_over")
+
+label game_over:
+    "Unfortunately, you have run out of ink..."
+    return
 
 label game_end:
     "Tada! You have won the game"

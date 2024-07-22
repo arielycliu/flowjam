@@ -241,7 +241,8 @@ label nostro25:
     nostro "Inksmith, you must forgive me for not warning you."
 
     show nostro veryhappy
-    nostro "Sometimes, I find the unexpected to be the most pleasing."
+    $ notebook_items.add("Sometimes, I find the unexpected to be the most pleasing.")
+    nostro "{font=gui/font/1546 Poliphile W00 Normal.ttf}{size=24}{b}Sometimes, I find the unexpected to be the most pleasing.{font=gui/font/1546 Poliphile W00 Normal.ttf}{size=24}{b}"
 
     show nostro worried
     nostro "[name], since you are here already - may I ask you another favour?"

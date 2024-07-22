@@ -23,10 +23,19 @@ style inv_button_text:
     xalign 0.5
     yalign 0.5
 
+style toggle is button:
+    background "#ffffff00" # transparent 
+
+style toggle_text is text:
+    size 40
+    hover_color "#9f8f6c"
+    color "#614c1f"
+    bold True
+
 screen notebook_item_description:
     # modal True
     window:
-        background "Menu/notebook.png"
+        background "Notebook/notebook.png"
         xsize 1290
         ysize 500
         xalign 0.55
@@ -48,13 +57,13 @@ screen notebook_item_description:
 
             # Navigation buttons
             hbox:
-                xoffset 50
-                yoffset 50
+                xoffset 60
+                yoffset 60
                 spacing 20
                 if current_page > 0:
-                    textbutton "Previous" action SetVariable("current_page", current_page - 1)
+                    textbutton "<" action SetVariable("current_page", current_page - 1) style "toggle"
                 if (current_page + 1) * 4 < len(notebook_items):
-                    textbutton "Next" action SetVariable("current_page", current_page + 1)
+                    textbutton ">" action SetVariable("current_page", current_page + 1) style "toggle"
 
 label notebook_demo:   
 

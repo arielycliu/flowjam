@@ -7,9 +7,9 @@ label synthea1:
     show screen basics
     show bg office
 
-    "A mortal is tapping away at a shimmering image of a keyboard in a technology-filled office."
+    "A mortal is furiously tapping away at a keyboard in a technology-filled office."
 
-    "Ah, the holographic age - the site of the death of the handwritten word."
+    "Ah, the digital age - the site of the death of the handwritten word."
 
     "The buzz of writing activity energizes me, though, and I glance at the mortal's screen."
 
@@ -27,7 +27,7 @@ label synthea11:
     synthea "!"
 
     show synthea grin
-    "She makes a zipping motion across her mouth, then turns off her screen and walks slowly over to the break room."
+    "She makes a zipping motion across her mouth, then turns off her screen and walks slowly over to a more private room."
 
     "Wordlessly, I follow."
 

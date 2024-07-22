@@ -1,3 +1,6 @@
+screen monitor_ink:
+    timer 0.1 action Function(check_ink)
+
 screen inkbar:
     bar:
         value ink
