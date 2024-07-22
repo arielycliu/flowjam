@@ -185,6 +185,7 @@ label peregrine1_menu:
     scene
     $ peregrine_bookmark = "peregrine1_menu"
     show screen basics
+    show bg knightroom
 
     show peregrine tired
     peregrine "Honestly, I'm not sure I even should."
@@ -212,9 +213,7 @@ label peregrine1_right:
 label peregrine2:
     $ part2 = 2
     scene
-    show screen inkbar
-    show screen notebook_display_toggle
-    show screen timelineButton
+    show screen basics
     show bg knightroom
 
     show peregrine smile
