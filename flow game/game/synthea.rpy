@@ -7,9 +7,9 @@ label synthea1:
     show screen basics
     show bg office
 
-    "A mortal is furiously tapping away at a keyboard in a technology-filled office."
+    "A mortal is tapping away at a shimmering image of a keyboard in a technology-filled office."
 
-    "Ah, the digital age - the site of the death of the handwritten word."
+    "Ah, the holographic age - the site of the death of the handwritten word."
 
     "The buzz of writing activity energizes me, though, and I glance at the mortal's screen."
 

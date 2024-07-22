@@ -131,16 +131,18 @@ image bg garden:
     "images/Backgrounds/bg garden.jpg"
     stretch_to_fill
 image bg knightroom:
-    "images/Backgrounds/bg knightroom.jpg"
-    stretch_to_fill
+    "images/Backgrounds/bg peasanthouse.jpg"
+    xysize (config.screen_width, config.screen_height + 200)
+    ypos 1.1
 image bg castle:
-    "images/Backgrounds/bg castle.jpg"
-    stretch_to_fill
+    "images/Backgrounds/bg bookshop.jpg"
+    xpos 0.45
+    xysize (config.screen_width + 199, config.screen_height)
 image bg office:
-    "images/Backgrounds/bg office.jpg"
+    "images/Backgrounds/bg futureoffice.jpg"
     stretch_to_fill
 image bg breakroom:
-    "images/Backgrounds/bg breakroom.jpg"
+    "images/Backgrounds/bg futureroom.jpg"
     stretch_to_fill
 
 define audio.gamemusic = "audio/teller-of-the-tales-by-kevin-macleod-from-filmmusic-io.mp3"

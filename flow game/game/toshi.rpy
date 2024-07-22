@@ -169,7 +169,7 @@ label toshi19:
 
 label toshi1_menu:
     scene
-    $ toshi_bookmark = "toshi1_menu"
+    $ toshi_bookmark = "toshi19" # jump back to before menu further for context
     show screen basics
     show bg garden
 
@@ -296,12 +296,6 @@ label toshi26:
     show toshi bored
     toshi "Perhaps."
 
-label toshi27:
-    scene
-    $ toshi_bookmark = "toshi27"
-    show screen basics
-    show bg garden
-
     show toshi sad
     $ notebook_items.add("But honesty never ends well in the long run. I know that from experience.")
     toshi "{font=gui/font/1546 poliphile w00 normal.ttf}{size=24}{b}But honesty never ends well in the long run. I know that from experience.{/b}{/size}{/font}"
@@ -311,7 +305,7 @@ label toshi27:
 
 label toshi2_menu:
     scene
-    $ toshi_bookmark = "toshi2_menu"
+    $ toshi_bookmark = "toshi26"
     show screen basics
     show bg garden
 
