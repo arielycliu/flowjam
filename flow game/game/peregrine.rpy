@@ -6,19 +6,31 @@ define peregrine = Character("Peregrine")
 label peregrine1:
     $ part2 = 1
     scene
-    show screen inkbar
-    show screen notebook_display_toggle
-    show screen timelineButton
+    $ peregrine_bookmark = "peregrine1"
+    show screen basics
     show bg knightroom
+
     "A mortal kneels against a wall in a squire's lodgings, quill set to parchment."
 
     "Her tongue is sticking slightly out of her mouth, and she hums a simple line of plainsong under her breath."
 
     "..."
 
+label peregrine11:
+    scene
+    $ peregrine_bookmark = "peregrine11"
+    show screen basics
+    show bg knightroom
+
     "I don't think she's going to notice me."
 
     "Overcoming my hesitation, I walk up and gently tap her on the shoulder."
+
+label peregrine12:
+    scene
+    $ peregrine_bookmark = "peregrine12"
+    show screen basics
+    show bg knightroom
 
     show peregrine mad
     "She whirls around with a swiftness that can only be born through combat."
@@ -27,12 +39,26 @@ label peregrine1:
 
     "Even knowing I cannot be killed, I feel a pinprick of fear."
 
+label peregrine13:
+    scene
+    $ peregrine_bookmark = "peregrine13"
+    show screen basics
+    show bg knightroom
+
+    show peregrine mad
     "Can mortals hurt us?"
 
     "Shouldn't Elias have mentioned this?"
 
     "Maybe they did? They did mention quite a lot of details."
 
+label peregrine14:
+    scene
+    $ peregrine_bookmark = "peregrine14"
+    show screen basics
+    show bg knightroom
+
+    show peregrine mad
     mc "Peregrine-!"
 
     show peregrine shocked
@@ -42,21 +68,41 @@ label peregrine1:
 
     mc "I-"
 
+label peregrine15:
+    scene
+    $ peregrine_bookmark = "peregrine15"
+    show screen basics
+    show bg knightroom
+
+    show peregrine shocked
     mc "You called for me!"
 
     peregrine "What?"
 
-    show peregrine mad
+label peregrine16:
+    scene
+    $ peregrine_bookmark = "peregrine16"
+    show screen basics
+    show bg knightroom
+
+    show peregrine neutral
     mc "You wanted help with writing something, yes?"
 
     mc "That's what I'm here for."
 
     mc "I'm a minor god."
 
+    show peregrine shocked
     peregrine "A what?"
 
     "What would a person like this understand?"
 
+label peregrine17:
+    scene
+    $ peregrine_bookmark = "peregrine17"
+    show screen basics
+    show bg knightroom
+    show peregrine neutral
     mc "I'm- I'm like a patron saint."
 
     mc "Of writing! A patron saint of writing."
@@ -66,42 +112,80 @@ label peregrine1:
     show peregrine neutral
     "She lets go, and backs up."
 
+label peregrine18:
+    scene
+    $ peregrine_bookmark = "peregrine18"
+    show screen basics
+    show bg knightroom
+    show peregrine distracted
     peregrine "I'm sorry. That was rude of me."
 
     show peregrine confused
     peregrine "It's not every day you're visited by a... minor god."
 
+    show peregrine talking
     peregrine "But I'm in desperate straits, my lord."
 
     mc "Please don't call me that."
-    
+
+label peregrine19:
+    scene
+    $ peregrine_bookmark = "peregrine19"
+    show screen basics
+    show bg knightroom
+
+    show peregrine neutral
+    peregrine "Alright, my... god"
+
     show peregrine neutral
     peregrine "If that is what you are, I'll take what help I can get."
 
-    "That's all I wanted."
-
     mc "Of course. What seems to be the problem?"
 
+label peregrine191:
+    scene
+    $ peregrine_bookmark = "peregrine191"
+    show screen basics
+    show bg knightroom
+
+    show peregrine neutral
     peregrine "I'm a squire, my lord. I've been one for years, and I've always dreamt of being a knight."
 
     mc "Not another 'my lord'. Please."
 
+    show peregrine smile
     peregrine "All right, all right." 
     
     peregrine "Anyway, I'm apprenticing under one of the king's own and everything."
 
-    peregrine "I just have to write this last letter."
+    show peregrine mad
+    peregrine "I was disqualified, on account of my upbringing"
 
-    show peregrine distracted
+label peregrine192:
+    scene
+    $ peregrine_bookmark = "peregrine192"
+    show screen basics
+    show bg knightroom
+
+    show peregrine tired
+    peregrine "I just have to write this last letter appealing the decision."
+
+    show peregrine shocked
     peregrine "I may not be from a wealthy family, but that's no reason to disqualify me from the position."
     
+    show peregrine mad
     peregrine "So I'm appealing to the order! If they'll just let me in, I can prove how strong I am."
 
+    show peregrine talking
     peregrine "Surely, I can convince them that they're being a bit old-fashioned, going on about good breeding and all that."
 
     # MENU - TIMES ARE CHANGING FROM NOSTRO
 
 label peregrine1_menu:
+    scene
+    $ peregrine_bookmark = "peregrine1_menu"
+    show screen basics
+
     show peregrine tired
     peregrine "Honestly, I'm not sure I even should."
     $ wrong_answer_label = "peregrine1_wrong"
@@ -111,7 +195,6 @@ label peregrine1_menu:
     show screen notebook_menu
     "What should I say?"
     
-
 label peregrine1_wrong: 
     $ ink = ink - 5
     show peregrine confused

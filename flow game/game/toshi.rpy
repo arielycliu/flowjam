@@ -7,17 +7,12 @@ screen fullscreen_garden:
 transform stretch_to_fill:
     xysize (config.screen_width, config.screen_height)
 
-screen toshi_setting:
-    use inkbar
-    use notebook_display_toggle
-    use timelineButton
-
 label toshi1:
     hide screen black_screen
     $ part1 = 1
     scene
     $ toshi_bookmark = "toshi1"
-    show screen toshi_setting
+    show screen basics
     show bg garden
     "On a balcony overlooking a grand maple garden, a mortal sits, surrounded by balls of paper."
 
@@ -32,7 +27,7 @@ label toshi1:
 label toshi11:
     scene
     $ toshi_bookmark = "toshi11"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi frownmasked
@@ -44,7 +39,7 @@ label toshi11:
 label toshi12:
     scene
     $ toshi_bookmark = "toshi12"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi surprisedmasked
@@ -60,7 +55,7 @@ label toshi12:
 label toshi13:
     scene
     $ toshi_bookmark = "toshi13"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi smile
@@ -77,7 +72,7 @@ label toshi13:
 label toshi14:
     scene
     $ toshi_bookmark = "toshi14"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi smile
@@ -93,7 +88,7 @@ label toshi14:
 label toshi15:
     scene
     $ toshi_bookmark = "toshi15"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi satisfied
@@ -108,7 +103,7 @@ label toshi15:
 label toshi16:
     scene
     $ toshi_bookmark = "toshi16"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi sad
@@ -123,7 +118,7 @@ label toshi16:
 label toshi17:
     scene
     $ toshi_bookmark = "toshi17"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi smile
@@ -140,7 +135,7 @@ label toshi17:
 label toshi18:
     scene
     $ toshi_bookmark = "toshi18"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi frown
@@ -158,7 +153,7 @@ label toshi18:
 label toshi19:
     scene
     $ toshi_bookmark = "toshi19"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi sad
@@ -175,7 +170,7 @@ label toshi19:
 label toshi1_menu:
     scene
     $ toshi_bookmark = "toshi1_menu"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi bored
@@ -205,7 +200,7 @@ label toshi2:
 
     scene
     $ toshi_bookmark = "toshi2"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi smile
@@ -220,7 +215,7 @@ label toshi2:
 label toshi21:
     scene
     $ toshi_bookmark = "toshi21"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi grin
@@ -235,7 +230,7 @@ label toshi21:
 label toshi22:
     scene
     $ toshi_bookmark = "toshi22"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi sad
@@ -250,7 +245,7 @@ label toshi22:
 label toshi23:
     scene
     $ toshi_bookmark = "toshi23"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi sad
@@ -266,7 +261,7 @@ label toshi23:
 label toshi24:
     scene
     $ toshi_bookmark = "toshi24"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi sad
@@ -278,7 +273,7 @@ label toshi24:
 label toshi25:
     scene
     $ toshi_bookmark = "toshi25"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi smile
@@ -290,7 +285,7 @@ label toshi25:
 label toshi26:
     scene
     $ toshi_bookmark = "toshi26"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi sad
@@ -304,7 +299,7 @@ label toshi26:
 label toshi27:
     scene
     $ toshi_bookmark = "toshi27"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi sad
@@ -317,7 +312,7 @@ label toshi27:
 label toshi2_menu:
     scene
     $ toshi_bookmark = "toshi2_menu"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi frownmasked
@@ -347,7 +342,7 @@ label toshi3:
     $ part1 = 3
     scene
     $ toshi_bookmark = "toshi3"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi smile
@@ -364,7 +359,7 @@ label toshi3:
 label toshi31:
     scene
     $ toshi_bookmark = "toshi31"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi grin
@@ -382,7 +377,7 @@ label toshi31:
 label toshi32:
     scene
     $ toshi_bookmark = "toshi32"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi grin
@@ -396,7 +391,7 @@ label toshi32:
 label toshi33:
     scene
     $ toshi_bookmark = "toshi33"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi smile
@@ -415,7 +410,7 @@ label toshi33:
 label toshi3_menu:
     scene
     $ toshi_bookmark = "toshi3_menu"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi frownmasked
@@ -445,7 +440,7 @@ label toshi34:
     $ part1 = 4
     scene
     $ toshi_bookmark = "toshi43"
-    show screen toshi_setting
+    show screen basics
     show bg garden
 
     show toshi smile
@@ -459,8 +454,8 @@ label toshi34:
 label toshi4:
     $ part1 = 4
     scene
-    show screen toshi_setting
     $ toshi_bookmark = "toshi4"
+    show screen basics
     show bg garden
 
     show toshi smile

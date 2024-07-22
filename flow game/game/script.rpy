@@ -145,7 +145,10 @@ define audio.gamemusic = "audio/teller-of-the-tales-by-kevin-macleod-from-filmmu
 default name = "???"
 default ink = 100
 
-
+screen basics:
+    use inkbar
+    use notebook_display_toggle
+    use timelineButton
 
 label start:
     play music gamemusic
