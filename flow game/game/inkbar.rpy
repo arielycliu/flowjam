@@ -7,8 +7,8 @@ screen inkbar:
         thumb "gui/bar/thumb_bar_ink.png"
         thumb_offset 9
         xysize(432, 150)
-        xalign 0.01
-        yalign 0.01
+        xalign 0.08
+        yalign 0.02
 
 label ink_demo:
     "Show ink"

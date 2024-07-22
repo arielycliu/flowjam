@@ -74,7 +74,7 @@ label nostro1_menu:
     $ right_answer = "Her ocean-blue eyes and snow-white hair captured my attention. When she smiled, she was the only person in the room to me."
     show screen notebook_display_toggle
     show screen notebook_menu
-    "What will you choose?"
+    
 
 label nostro1_wrong: 
     $ ink = ink - 5
@@ -167,7 +167,7 @@ label nostro2_menu:
     $ right_answer = "lying can always solve problems. Or make things better. Or if not better, more interesting."
     show screen notebook_display_toggle
     show screen notebook_menu
-    "What will you choose?"
+    
 
 label nostro2_wrong: 
     $ ink = ink - 5
@@ -234,7 +234,7 @@ label nostro3_menu:
     $ right_answer = "We've been working so hard to make things appealing to everyone, we haven't stopped to wonder if we should."
     show screen notebook_display_toggle
     show screen notebook_menu
-    "What will you choose?"
+    
 
 label nostro3_wrong: 
     $ ink = ink - 5

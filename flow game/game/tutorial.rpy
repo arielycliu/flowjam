@@ -1,10 +1,14 @@
-define elias = Character("Elias", color="#5d773a")
+define elias = Character("Elias", color="#84622e")
 define mc = Character("???", color="#685d4b")
+
+screen black_screen:
+    frame:
+        background "#000000"
 
 label tutorial:
     $ ink = 100
 
-    scene bg dusk
+    scene bg pinkgalaxy
 
     "But am I truly ready?"
 
@@ -40,10 +44,6 @@ label tutorial:
 
     show elias smile
     show screen timelineButton
-    define part1 = 0
-    define part2 = 0
-    define part3 = 0
-    define part4 = 0
     elias "Take a look at the timeline map."
 
     show elias neutral
@@ -117,5 +117,7 @@ label tutorial:
     $ part2 = 1
     $ part3 = 1
     $ part4 = 1
+
+    show screen black_screen with dissolve
 
     jump toshi1

@@ -4,8 +4,8 @@ screen notebook_display_toggle:
         idle "gui/button/notebookbutton_hover.png"
         hover "gui/button/notebookbutton_selected.png"
         action ToggleScreen("notebook_item_description")
-        xalign 0.05
-        yalign 0.1
+        xalign 0.07
+        yalign 0.11
 
     on "hide" action Hide("notebook_item_description")
 
@@ -25,10 +25,10 @@ style inv_button_text:
 screen notebook_item_description:
     # modal True
     window:
-        background "#4f39284a"
+        background "Menu/notebook.png"
         xsize 1290
         ysize 500
-        xalign 0.5
+        xalign 0.55
         yalign 0.4
         vbox:
             spacing 10
@@ -36,8 +36,8 @@ screen notebook_item_description:
                 box_wrap True
                 box_wrap_spacing 10
                 spacing 10
-                xoffset 20
-                yoffset 20
+                xoffset 50
+                yoffset 50
                 style_prefix "inv"
                 
                 for item in get_page_items(notebook_items, current_page):
@@ -47,8 +47,8 @@ screen notebook_item_description:
 
             # Navigation buttons
             hbox:
-                xoffset 30
-                yoffset 30
+                xoffset 50
+                yoffset 50
                 spacing 20
                 if current_page > 0:
                     textbutton "Previous" action SetVariable("current_page", current_page - 1)
@@ -89,8 +89,8 @@ screen notebook_menu:
 
     # lets us still click timeline button
     imagebutton:
-        xalign 1.0
-        yalign 0.0
+        xalign 0.95
+        yalign 0.08
         xoffset -30
         yoffset 30
         auto "gui/button/timeline_%s.png"

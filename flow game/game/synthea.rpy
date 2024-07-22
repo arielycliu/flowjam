@@ -74,7 +74,7 @@ label synthea1_menu:
     $ right_answer = "Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better."
     show screen notebook_display_toggle
     show screen notebook_menu
-    "What will you choose?"
+    
 
 label synthea1_wrong: 
     $ ink = ink - 5
@@ -141,7 +141,7 @@ label synthea2_menu:
     $ right_answer = "We have to believe that things can get better."
     show screen notebook_display_toggle
     show screen notebook_menu
-    "What will you choose?"
+    
 
 label synthea2_wrong: 
     $ ink = ink - 5
@@ -207,7 +207,7 @@ label synthea3_menu:
     $ right_answer = "A handsome smile and a flattering voice will get you far."
     show screen notebook_display_toggle
     show screen notebook_menu
-    "What will you choose?"
+    
 
 label synthea3_wrong: 
     $ ink = ink - 5

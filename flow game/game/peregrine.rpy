@@ -109,7 +109,7 @@ label peregrine1_menu:
     $ right_answer = "Ah, well. Times are changing. That is inevitable. We can only hope to change them for the better."
     show screen notebook_display_toggle
     show screen notebook_menu
-    "What will you choose?"
+    
 
 label peregrine1_wrong: 
     $ ink = ink - 5
@@ -163,7 +163,7 @@ label peregrine2_menu:
     $ right_answer = "You already know you've got the best product in town. You just need your buyers to believe that."
     show screen notebook_display_toggle
     show screen notebook_menu
-    "What will you choose?"
+    
 
 label peregrine2_wrong: 
     $ ink = ink - 5
@@ -256,7 +256,7 @@ label peregrine3_menu:
     $ right_answer = "And I've worked really, really hard to be in this position."
     show screen notebook_display_toggle
     show screen notebook_menu
-    "What will you choose?"
+    
 
 label peregrine3_wrong: 
     $ ink = ink - 5
