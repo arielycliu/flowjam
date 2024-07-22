@@ -85,6 +85,7 @@ label synthea1_right:
 
     # MENU - Sometimes, I find the unexpected to be the most pleasing.
 
+    synthea "Hmm. There's a thought, huh?"
 
 label synthea2:
     $ part4 = 2
@@ -111,6 +112,8 @@ label synthea2:
     synthea "Climate change, animal protection, addiction, - they're worn out on caring."
 
     synthea "I suppose all the advertising hasn't really helped."
+
+    mc "I can't say I'm surprised."
 
     show synthea happy
     synthea "At this point, I'm not sure what kind of messaging will even engage people."
@@ -143,7 +146,77 @@ label synthea3:
     $ part4 = 3
     synthea "Maybe hope is what's missing in this world."
 
+    synthea "The constant motion of advertisements, of money, of things..."
+
+    synthea "It gets a bit tiring."
+
     show synthea sad
     synthea "I... don't think I like my job much anymore, to be honest."
 
     synthea "{ink}We've been working so hard to make things appealing to everyone, we haven't stopped to wonder if we should.{/ink}"
+
+    synthea "I got into this industry because I was passionate about helping people share their ideas and inventions with the world."
+
+    synthea "But I'm just so tired of working for nothing."
+
+    show synthea angry
+    synthea "I get paid, that's for sure."
+
+    show synthea sad
+    synthea "But I don't even know who I'm advocating for anymore."
+
+    synthea "Who cares if your home has a massage chair that accommodates both children and dogs?"
+
+    mc "A what?"
+
+    synthea "This isn't... what I dreamed of, when I dreamed of working in advertising."
+
+    synthea "I still want this career. But this place... it's miserable."
+
+    synthea "I just feel stuck."
+
+    synthea "If I could start my own agency, maybe things would be different."
+
+    synthea "But I don't think I'm the type to just pack up my life and leave."
+
+    synthea "Who knows if I could make it out there."
+
+    # A handsome smile and a flattering voice will get you far.
+
+    show synthea shocked
+    synthea "Do you really think so?"
+
+    mc "Of course, Synthea. You seem so passionate. And you're clearly good at what you do."
+
+    show synthea happy
+    synthea "Oh!"
+
+    synthea "No one's... ever said that to me before."
+
+    mc "Really? That's difficult to believe."
+
+    synthea "No, really."
+
+    show synthea sad
+    synthea "No one really notices me around here."
+
+    synthea "So for someone to say that, even if they're mostly a stranger..."
+
+    "And a god...?"
+
+    synthea "It makes me feel warm."
+
+    show synthea grin
+    synthea "Maybe I will quit!"
+
+    show synthea happy
+    synthea "This place is a hellhole, anyway."
+
+    synthea "Just imagine me, leading my own agency."
+
+    synthea "Synthea's SuperAds!"
+
+    synthea "Or, uh, something like that."
+
+    synthea "But it would be mine!"
+
