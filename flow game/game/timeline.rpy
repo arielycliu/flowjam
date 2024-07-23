@@ -19,7 +19,8 @@ label call_timelineUI:
     hide peregrine
     hide nostro
     if part1 == part2 == part3 == part4 == 4:
-        jump game_end
+        if toshi_bookmark == "toshi41" and peregrine_bookmark == "peregrine43" and nostro_bookmark == "nostro41" and synthea_bookmark == "synthea42":
+            jump game_end
     call screen TimelineUI
 
 
